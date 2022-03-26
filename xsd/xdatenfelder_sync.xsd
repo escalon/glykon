@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdf="urn:xoev-de:fim:standard:xdatenfelder_2" targetNamespace="urn:xoev-de:fim:standard:xdatenfelder_2" version="2.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:annotation>
+    <xs:appinfo>
+      <standard>
+        <nameLang>XDatenfelder</nameLang>
+        <nameKurz>XDatenfelder</nameKurz>
+        <nameTechnisch>xdatenfelder</nameTechnisch>
+        <kennung>urn:xoev-de:fim:standard:xdatenfelder</kennung>
+        <beschreibung>XDatenfelder</beschreibung>
+      </standard>
+      <versionStandard>
+        <version>2.0</version>
+        <versionXOEVHandbuch>2.1.0</versionXOEVHandbuch>
+        <versionXGenerator>2.6.1</versionXGenerator>
+        <versionModellierungswerkzeug>18.5</versionModellierungswerkzeug>
+        <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+      </versionStandard>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:include schemaLocation="xdatenfelder-baukasten.xsd" />
+  <xs:element name="sync.anfrage.0301">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Anfrage zur Synchronisation. Antwort: sync.antwort.0302.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="veroeffentlichtAb" type="xs:dateTime">
+              <xs:annotation>
+                <xs:documentation>Abruf aller zu oder nach diesem Zeitpunkt veröffentlichten Elemente; ein Datum vor dem 01.01.2018 für alles.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="limit" minOccurs="0" type="xs:integer">
+              <xs:annotation>
+                <xs:documentation>Maximale Anzahl von Ergebnissen. Der Server kann diesen Wert reduzieren bzw. einen eigenen Wert vorgeben, falls nicht angegeben.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sync.antwort.0302">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Dies ist die Antwort auf die Nachricht sync.anfrage.0301. Sie enthält einer Liste der seit dem Stichtag 'veröffentlichtAb' veröffentlichten Elemente in zeitlicher Reihenfolge.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="limitiert" type="xs:boolean">
+              <xs:annotation>
+                <xs:documentation>Zeigt an, ob die Liste limitiert wurde.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="element" minOccurs="0" maxOccurs="unbounded" type="xdf:ElementIdentifikation">
+              <xs:annotation>
+                <xs:documentation>Liste der zur Anfrage passenden Elemente (nur IDs).</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sync.abruf.0303">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Antwort: Zu Typ des angefragten Elements passende Nachricht aus Gruppe 1.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="element" type="xdf:ElementIdentifikation">
+              <xs:annotation>
+                <xs:documentation>Eindeutige Identifikation des angefragten Elements.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

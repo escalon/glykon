@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdf="urn:xoev-de:fim:standard:xdatenfelder_2" targetNamespace="urn:xoev-de:fim:standard:xdatenfelder_2" version="2.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:annotation>
+    <xs:appinfo>
+      <standard>
+        <nameLang>XDatenfelder</nameLang>
+        <nameKurz>XDatenfelder</nameKurz>
+        <nameTechnisch>xdatenfelder</nameTechnisch>
+        <kennung>urn:xoev-de:fim:standard:xdatenfelder</kennung>
+        <beschreibung>XDatenfelder</beschreibung>
+      </standard>
+      <versionStandard>
+        <version>2.0</version>
+        <versionXOEVHandbuch>2.1.0</versionXOEVHandbuch>
+        <versionXGenerator>2.6.1</versionXGenerator>
+        <versionModellierungswerkzeug>18.5</versionModellierungswerkzeug>
+        <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+      </versionStandard>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:simpleType name="AnzahlString">
+    <xs:annotation>
+      <xs:documentation>Beschreibt einen String, der die Kardinalität der Elemente beschreibt.Beispiele: "0:1", "0:7" oder "1:*"</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d+:(\*|\d+)" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="VersionString">
+    <xs:annotation>
+      <xs:documentation>Ein String, der eine Versionsnummer darstellt. Beispiel: "1.0" oder "2.7"</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d+\.\d+" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

@@ -1,0 +1,1377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdf="urn:xoev-de:fim:standard:xdatenfelder_2" xmlns:xoev-code="http://xoev.de/schemata/code/1_0" xmlns:xoev-lc="http://xoev.de/latinchars/1_1/datatypes" targetNamespace="urn:xoev-de:fim:standard:xdatenfelder_2" version="2.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:annotation>
+    <xs:appinfo>
+      <standard>
+        <nameLang>XDatenfelder</nameLang>
+        <nameKurz>XDatenfelder</nameKurz>
+        <nameTechnisch>xdatenfelder</nameTechnisch>
+        <kennung>urn:xoev-de:fim:standard:xdatenfelder</kennung>
+        <beschreibung>XDatenfelder</beschreibung>
+      </standard>
+      <versionStandard>
+        <version>2.0</version>
+        <versionXOEVHandbuch>2.1.0</versionXOEVHandbuch>
+        <versionXGenerator>2.6.1</versionXGenerator>
+        <versionModellierungswerkzeug>18.5</versionModellierungswerkzeug>
+        <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+      </versionStandard>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:include schemaLocation="xdatenfelder-datentypen.xsd" />
+  <xs:import schemaLocation="latinchars.xsd" namespace="http://xoev.de/latinchars/1_1/datatypes" />
+  <xs:import schemaLocation="xoev-code.xsd" namespace="http://xoev.de/schemata/code/1_0" />
+  <xs:simpleType name="AbleitungsmodifikationenRepraesentation">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>AbleitungsmodifikationenRepraesentation</nameLang>
+          <nameKurz>AbleitungsmodifikationenRepraesentation</nameKurz>
+          <nameTechnisch>XDatenfelder.AbleitungsmodifikationenRepraesentation</nameTechnisch>
+          <kennung>XDatenfelder.AbleitungsmodifikationenRepraesentation</kennung>
+          <beschreibung>Mit dieser Codeliste wird die Möglichkeit der Modifikation eines abgeleiteten Elements beschrieben.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="0">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>nicht modifizierbar</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>modifizierbar</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AbleitungsmodifikationenStruktur">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>AbleitungsmodifikationenStruktur</nameLang>
+          <nameKurz>AbleitungsmodifikationenStruktur</nameKurz>
+          <nameTechnisch>XDatenfelder.AbleitungsmodifikationenStruktur</nameTechnisch>
+          <kennung>XDatenfelder.AbleitungsmodifikationenStruktur</kennung>
+          <beschreibung>Mit dieser Codeliste wird die Möglichkeit der Veränderungen an der Struktur von abgeleiteten Elementen beschrieben.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="0">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>nicht modifizierbar</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>nur einschränkbar</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>nur erweiterbar</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="3">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>alles modifizierbar</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="AllgemeineAngaben" abstract="true">
+    <xs:annotation>
+      <xs:documentation>Allgemeine Angaben, die in allen Bausteinen enthalten sind.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="identifikation" type="xdf:ElementIdentifikation">
+        <xs:annotation>
+          <xs:documentation>Eine eindeutige Identifikation, die aus einer aus einem Buchstaben und einer fortlaufende Nummer
+bestehenden ID (Beispiel: "F00000001") und der Versionsnummer zusammengesetzt ist.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="name" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>FIM-interner Name des Elements.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="bezeichnungEingabe" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>Bezeichnung des Elements, welche für den Bürger/das Unternehmen sichtbar ist.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="bezeichnungAusgabe" minOccurs="0" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>Bezeichnung des Elements, welche für den Bürger/das Unternehmen sichtbar ist.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="beschreibung" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>Zusätzliche Beschreibung und Erläuterung des Elements für FIM-
+Nutzer.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="definition" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>Fasst den Inhalt des Elements aus redaktioneller Sicht zusammen, d.h. aus Sicht der Rollen fachlicher Ersteller, Methodenexperte, Informationsmanager, FIM-Koordinierungsstelle, FIM-Nutzer.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="bezug" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>Dieses Attribut ermöglicht es, Bezüge zu einschlägigen Rechtsnormen sowie in anderen Vorhaben wie den XÖV-Vorhaben (z.B. XWaffe) oder Vorhaben wie P23R gleich oder ähnlich definierten Datencontainer zu erstellen und diese Verbindung zu dokumentieren. Hierdurch lässt sich die Ausgestaltung eines Elements gemäß einschlägigen Rechtsnormen oder Standardisierungsverfahren belegen.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="status" type="xdf:Code.Status">
+        <xs:annotation>
+          <xs:documentation>Der Status gibt Aufschluss darüber, ob und wie das Element im Rahmen des Editors zu verwenden ist. Mögliche Ausprägungen dieses Metadatums sind: "aktiv", "in Vorbereitung", "inaktiv".</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="gueltigAb" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Sofern es eine Beschränkung der Gültigkeit gibt, ist der Gültigkeitszeitraum zu erfassen. Mit diesem Metadatum wird der Beginn der Gültigkeit erfasst.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="gueltigBis" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Sofern es eine Beschränkung der Gültigkeit gibt, ist der Gültigkeitszeitraum zu erfassen. Mit diesem Metadatum wird das Ende der Gültigkeit erfasst.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="fachlicherErsteller" minOccurs="0" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>Ersteller oder erstellende Institution.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="versionshinweis" minOccurs="0" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>Versionsspezifischer Hinweis.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="freigabedatum" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Datum der Freigabe durch die Freigabeinstanz.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="veroeffentlichungsdatum" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Datum, an dem das Element veröffentlicht wurde.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Code.AbleitungsmodifikationenRepraesentation">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>AbleitungsmodifikationenRepraesentation</nameLang>
+          <nameKurz>AbleitungsmodifikationenRepraesentation</nameKurz>
+          <nameTechnisch>XDatenfelder.AbleitungsmodifikationenRepraesentation</nameTechnisch>
+          <kennung>XDatenfelder.AbleitungsmodifikationenRepraesentation</kennung>
+          <beschreibung>Mit dieser Codeliste wird die Möglichkeit der Modifikation eines abgeleiteten Elements beschrieben.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base="xoev-code:Code">
+        <xs:sequence>
+          <xs:element name="code" type="xdf:AbleitungsmodifikationenRepraesentation" form="unqualified">
+            <xs:annotation>
+              <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+              <xs:documentation>In diesem XML-Element wird der Code einer Codeliste übermittelt.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional" fixed="urn:xoev-de:fim:codeliste:xdatenfelder.ableitungsmodifikationenRepraesentation">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.
+
+Wird bereits im Rahmen des XÖV-Standards eine Kennung vorgegeben (es handelt sich in diesem Fall um einen Code-Typ 1, 2 oder 3) darf auf eine nochmalige Angabe der Kennung bei der Übermittlung eines Codes verzichtet werden. Aus diesem Grund ist das XML-Attribut listURI zunächst als optional deklariert.</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="listVersionID" type="xs:normalizedString" use="optional" fixed="1.0">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.
+
+Analog zum listURI ist die Bestimmung der Version einer Codeliste bei der Übertragung eines Codes zwingend. Die Version kann jedoch ebenfalls bereits im XÖV-Standard festgelegt werden (es handelt sich in diesem Fall um einen Code-Typ 1 oder 2).</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Code.AbleitungsmodifikationenStruktur">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>AbleitungsmodifikationenStruktur</nameLang>
+          <nameKurz>AbleitungsmodifikationenStruktur</nameKurz>
+          <nameTechnisch>XDatenfelder.AbleitungsmodifikationenStruktur</nameTechnisch>
+          <kennung>XDatenfelder.AbleitungsmodifikationenStruktur</kennung>
+          <beschreibung>Mit dieser Codeliste wird die Möglichkeit der Veränderungen an der Struktur von abgeleiteten Elementen beschrieben.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base="xoev-code:Code">
+        <xs:sequence>
+          <xs:element name="code" type="xdf:AbleitungsmodifikationenStruktur" form="unqualified">
+            <xs:annotation>
+              <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+              <xs:documentation>In diesem XML-Element wird der Code einer Codeliste übermittelt.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional" fixed="urn:xoev-de:fim:codeliste:xdatenfelder.ableitungsmodifikationenStruktur">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.
+
+Wird bereits im Rahmen des XÖV-Standards eine Kennung vorgegeben (es handelt sich in diesem Fall um einen Code-Typ 1, 2 oder 3) darf auf eine nochmalige Angabe der Kennung bei der Übermittlung eines Codes verzichtet werden. Aus diesem Grund ist das XML-Attribut listURI zunächst als optional deklariert.</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="listVersionID" type="xs:normalizedString" use="optional" fixed="1.0">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.
+
+Analog zum listURI ist die Bestimmung der Version einer Codeliste bei der Übertragung eines Codes zwingend. Die Version kann jedoch ebenfalls bereits im XÖV-Standard festgelegt werden (es handelt sich in diesem Fall um einen Code-Typ 1 oder 2).</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Code.Datentyp">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>Datenfeldtyp</nameLang>
+          <nameKurz>Datentyp</nameKurz>
+          <nameTechnisch>XDatenfelder.Datentyp</nameTechnisch>
+          <kennung>XDatenfelder.Datentyp</kennung>
+          <beschreibung>Mit dieser Codeliste wird der Datentyp eines Datenfeldes abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base="xoev-code:Code">
+        <xs:sequence>
+          <xs:element name="code" type="xdf:Datentyp" form="unqualified">
+            <xs:annotation>
+              <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+              <xs:documentation>In diesem XML-Element wird der Code einer Codeliste übermittelt.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional" fixed="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.
+
+Wird bereits im Rahmen des XÖV-Standards eine Kennung vorgegeben (es handelt sich in diesem Fall um einen Code-Typ 1, 2 oder 3) darf auf eine nochmalige Angabe der Kennung bei der Übermittlung eines Codes verzichtet werden. Aus diesem Grund ist das XML-Attribut listURI zunächst als optional deklariert.</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="listVersionID" type="xs:normalizedString" use="optional" fixed="1.0">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.
+
+Analog zum listURI ist die Bestimmung der Version einer Codeliste bei der Übertragung eines Codes zwingend. Die Version kann jedoch ebenfalls bereits im XÖV-Standard festgelegt werden (es handelt sich in diesem Fall um einen Code-Typ 1 oder 2).</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Code.ElementTyp">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>ElementTyp</nameLang>
+          <nameKurz>ElementTyp</nameKurz>
+          <nameTechnisch>XDatenfelder.ElementTyp</nameTechnisch>
+          <kennung>XDatenfelder.ElementTyp</kennung>
+          <beschreibung>Mit dieser Codeliste wird der Typ eines Elements abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base="xoev-code:Code">
+        <xs:sequence>
+          <xs:element name="code" type="xdf:ElementTyp" form="unqualified">
+            <xs:annotation>
+              <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+              <xs:documentation>In diesem XML-Element wird der Code einer Codeliste übermittelt.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional" fixed="urn:xoev-de:fim:codeliste:xdatenfelder.elementTyp">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.
+
+Wird bereits im Rahmen des XÖV-Standards eine Kennung vorgegeben (es handelt sich in diesem Fall um einen Code-Typ 1, 2 oder 3) darf auf eine nochmalige Angabe der Kennung bei der Übermittlung eines Codes verzichtet werden. Aus diesem Grund ist das XML-Attribut listURI zunächst als optional deklariert.</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="listVersionID" type="xs:normalizedString" use="optional" fixed="1.0">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.
+
+Analog zum listURI ist die Bestimmung der Version einer Codeliste bei der Übertragung eines Codes zwingend. Die Version kann jedoch ebenfalls bereits im XÖV-Standard festgelegt werden (es handelt sich in diesem Fall um einen Code-Typ 1 oder 2).</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Code.Feldart">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>Datenfeldart</nameLang>
+          <nameKurz>Feldart</nameKurz>
+          <nameTechnisch>XDatenfelder.Feldart</nameTechnisch>
+          <kennung>XDatenfelder.Feldart</kennung>
+          <beschreibung>Mit dieser Codeliste wird die Feldart eines Datenfeldes abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base="xoev-code:Code">
+        <xs:sequence>
+          <xs:element name="code" type="xdf:Feldart" form="unqualified">
+            <xs:annotation>
+              <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+              <xs:documentation>In diesem XML-Element wird der Code einer Codeliste übermittelt.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional" fixed="urn:xoev-de:fim:codeliste:xdatenfelder.feldart">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.
+
+Wird bereits im Rahmen des XÖV-Standards eine Kennung vorgegeben (es handelt sich in diesem Fall um einen Code-Typ 1, 2 oder 3) darf auf eine nochmalige Angabe der Kennung bei der Übermittlung eines Codes verzichtet werden. Aus diesem Grund ist das XML-Attribut listURI zunächst als optional deklariert.</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="listVersionID" type="xs:normalizedString" use="optional" fixed="1.0">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.
+
+Analog zum listURI ist die Bestimmung der Version einer Codeliste bei der Übertragung eines Codes zwingend. Die Version kann jedoch ebenfalls bereits im XÖV-Standard festgelegt werden (es handelt sich in diesem Fall um einen Code-Typ 1 oder 2).</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Code.Schemaelementart">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>Schemaelemetart</nameLang>
+          <nameKurz>Schemaelemetart</nameKurz>
+          <nameTechnisch>XDatenfelder.Schemaelementart</nameTechnisch>
+          <kennung>XDatenfelder.Schemaelemetart</kennung>
+          <beschreibung>Mit dieser Codeliste wird die Art eines Schemaelements abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base="xoev-code:Code">
+        <xs:sequence>
+          <xs:element name="code" type="xdf:Schemaelementart" form="unqualified">
+            <xs:annotation>
+              <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+              <xs:documentation>In diesem XML-Element wird der Code einer Codeliste übermittelt.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional" fixed="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.
+
+Wird bereits im Rahmen des XÖV-Standards eine Kennung vorgegeben (es handelt sich in diesem Fall um einen Code-Typ 1, 2 oder 3) darf auf eine nochmalige Angabe der Kennung bei der Übermittlung eines Codes verzichtet werden. Aus diesem Grund ist das XML-Attribut listURI zunächst als optional deklariert.</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="listVersionID" type="xs:normalizedString" use="optional" fixed="1.0">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.
+
+Analog zum listURI ist die Bestimmung der Version einer Codeliste bei der Übertragung eines Codes zwingend. Die Version kann jedoch ebenfalls bereits im XÖV-Standard festgelegt werden (es handelt sich in diesem Fall um einen Code-Typ 1 oder 2).</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Code.Status">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>Status</nameLang>
+          <nameKurz>Status</nameKurz>
+          <nameTechnisch>XDatenfelder.Status</nameTechnisch>
+          <kennung>XDatenfelder.Status</kennung>
+          <beschreibung>Der Status gibt Aufschluss darüber, ob und wie das Element im Rahmen des Editors zu verwenden ist.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base="xoev-code:Code">
+        <xs:sequence>
+          <xs:element name="code" form="unqualified">
+            <xs:annotation>
+              <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+              <xs:documentation>In diesem XML-Element wird der Code einer Codeliste übermittelt.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="aktiv">
+                  <xs:annotation>
+                    <xs:appinfo>
+                      <wertErsteBeschreibungsspalte>Aktiv</wertErsteBeschreibungsspalte>
+                    </xs:appinfo>
+                  </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="inaktiv">
+                  <xs:annotation>
+                    <xs:appinfo>
+                      <wertErsteBeschreibungsspalte>Inaktiv</wertErsteBeschreibungsspalte>
+                    </xs:appinfo>
+                  </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="inVorbereitung">
+                  <xs:annotation>
+                    <xs:appinfo>
+                      <wertErsteBeschreibungsspalte>In Vorbereitung</wertErsteBeschreibungsspalte>
+                    </xs:appinfo>
+                  </xs:annotation>
+                </xs:enumeration>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional" fixed="urn:xoev-de:fim:codeliste:xdatenfelder.status">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.
+
+Wird bereits im Rahmen des XÖV-Standards eine Kennung vorgegeben (es handelt sich in diesem Fall um einen Code-Typ 1, 2 oder 3) darf auf eine nochmalige Angabe der Kennung bei der Übermittlung eines Codes verzichtet werden. Aus diesem Grund ist das XML-Attribut listURI zunächst als optional deklariert.</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="listVersionID" type="xs:normalizedString" use="optional" fixed="1.0">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.
+
+Analog zum listURI ist die Bestimmung der Version einer Codeliste bei der Übertragung eines Codes zwingend. Die Version kann jedoch ebenfalls bereits im XÖV-Standard festgelegt werden (es handelt sich in diesem Fall um einen Code-Typ 1 oder 2).</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Code.Suchfeld">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>Suchfeld</nameLang>
+          <nameKurz>Suchfeld</nameKurz>
+          <nameTechnisch>XDatenfelder.Suchfeld</nameTechnisch>
+          <kennung>XDatenfelder.Suchfeld</kennung>
+          <beschreibung>Mit dieser Codeliste werden die verschiedenen Felder, in denen gesucht werden kann, abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:restriction base="xoev-code:Code">
+        <xs:sequence>
+          <xs:element name="code" type="xdf:Suchfeld" form="unqualified">
+            <xs:annotation>
+              <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+              <xs:documentation>In diesem XML-Element wird der Code einer Codeliste übermittelt.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional" fixed="urn:xoev-de:fim:codeliste:xdatenfelder.feld">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Mit diesem XML-Attribut wird die Kennung der Codeliste übermittelt, in deren Kontext der jeweilige Code zu interpretieren ist. Die Kennung identifiziert die Codeliste, nicht jedoch deren Version eindeutig.
+
+Wird bereits im Rahmen des XÖV-Standards eine Kennung vorgegeben (es handelt sich in diesem Fall um einen Code-Typ 1, 2 oder 3) darf auf eine nochmalige Angabe der Kennung bei der Übermittlung eines Codes verzichtet werden. Aus diesem Grund ist das XML-Attribut listURI zunächst als optional deklariert.</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="listVersionID" type="xs:normalizedString" use="optional" fixed="1.0">
+          <xs:annotation>
+            <xs:documentation>Dokumentation aus XOEV-Bibliothek:</xs:documentation>
+            <xs:documentation>Die konkrete Version der zu nutzenden Codeliste wird mit diesem XML-Attribut übertragen.
+
+Analog zum listURI ist die Bestimmung der Version einer Codeliste bei der Übertragung eines Codes zwingend. Die Version kann jedoch ebenfalls bereits im XÖV-Standard festgelegt werden (es handelt sich in diesem Fall um einen Code-Typ 1 oder 2).</xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Codeliste">
+    <xs:annotation>
+      <xs:documentation>Eine Codeliste ist eine Liste von vordefinierten Werten.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="xdf:AllgemeineAngaben">
+        <xs:sequence>
+          <xs:element name="genericodeIdentification" type="xdf:GenericodeIdentification">
+            <xs:annotation>
+              <xs:documentation>Die Kennung ist eine eindeutige technische Identifikation der Codeliste.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="langname" type="xoev-lc:String.Latin">
+            <xs:annotation>
+              <xs:documentation>Langer Name der Codeliste, wird für die Erzeugnung von Genericode verwendet.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="genericode" type="xdf:Genericode">
+            <xs:annotation>
+              <xs:documentation>Codeliste im Genericode-Format.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CodelisteReferenz">
+    <xs:annotation>
+      <xs:documentation>Referenz auf eine Codeliste.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="identifikation" type="xdf:ElementIdentifikation">
+        <xs:annotation>
+          <xs:documentation>Eindeutige Identifikation der referenzierten Codeliste.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="genericodeIdentification" type="xdf:GenericodeIdentification">
+        <xs:annotation>
+          <xs:documentation>Identifikation der referenzierten GenericodeCodeliste.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Datenfeld">
+    <xs:annotation>
+      <xs:documentation>Die Feldart gibt die grundsätzliche Art des Feldes an.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="xdf:Schemaelementangaben">
+        <xs:sequence>
+          <xs:element name="feldart" type="xdf:Code.Feldart">
+            <xs:annotation>
+              <xs:documentation>Art des Datenfelds.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="datentyp" type="xdf:Code.Datentyp">
+            <xs:annotation>
+              <xs:documentation>Der Datentyp bezeichnet die Zusammenfassung konkreter Wertebereiche und ggf. darauf definierten Operationen zu einer Einheit, die mit Hilfe von Regeln abbildbar sind. Zudem spezifiziert der Datentyp die Struktur des Inhalts oder gibt Aufschlüsse über die Feldinhaltsänderbarkeit.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="praezisierung" type="xoev-lc:String.Latin">
+            <xs:annotation>
+              <xs:documentation>Die Präzisierung verfeinter den Datentyp weiter.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="inhalt" type="xoev-lc:String.Latin">
+            <xs:annotation>
+              <xs:documentation>Dieses Metadatum dient dazu, den Inhalt eines Formularfeldes zu spezifizieren, d.h. ein vordefinierter (Default-)Wert für ein Textfeld.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="codelisteReferenz" minOccurs="0" type="xdf:CodelisteReferenz">
+            <xs:annotation>
+              <xs:documentation>Der Verweis unterstützt die Verknüpfung eines Formularfelds mit einer vordefinierten Codeliste.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="regel" minOccurs="0" maxOccurs="unbounded" type="xdf:Regel">
+            <xs:annotation>
+              <xs:documentation>Die Regeln schränken die möglichen Verwendungen des Feldes mittels Scripten ein.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Datenfeldgruppe">
+    <xs:annotation>
+      <xs:documentation>Eine Datenfeldgruppe besteht aus einer Sammlung von Datenfeldern und/oder Datenfeldgruppen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="xdf:Schemaelementangaben">
+        <xs:sequence>
+          <xs:element name="regel" minOccurs="0" maxOccurs="unbounded" type="xdf:Regel">
+            <xs:annotation>
+              <xs:documentation>Die Regeln schränken die möglichen Verwendungen der Gruppe mittels Scripten ein.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="struktur" minOccurs="0" maxOccurs="unbounded" type="xdf:Struktur">
+            <xs:annotation>
+              <xs:documentation>Die Struktur listet alle Unterelement auf.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="Datentyp">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>Datenfeldtyp</nameLang>
+          <nameKurz>Datentyp</nameKurz>
+          <nameTechnisch>XDatenfelder.Datentyp</nameTechnisch>
+          <kennung>XDatenfelder.Datentyp</kennung>
+          <beschreibung>Mit dieser Codeliste wird der Datentyp eines Datenfeldes abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="bool">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Wahrheitswert</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="date">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Datum</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="file">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Anlage (Datei)</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="num">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Nummer</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="num_currency">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Geldbetrag</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="num_int">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Ganzzahl</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="obj">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Objekt (Blob)</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="text">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Text</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Dokumentsteckbrief">
+    <xs:annotation>
+      <xs:documentation>Mit einem Dokumentsteckbrief kann im ersten Schritt ein Dokument (Formular) (mit seinen Metadaten) in der Datenfelderbibliothek erfasst werden, ohne gleichzeitig oder direkt anschließend die Struktur des Dokuments (d.h.das zugehörige Stammdatenschema) erstellen zu müssen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="xdf:AllgemeineAngaben">
+        <xs:sequence>
+          <xs:element name="isReferenz" type="xs:boolean">
+            <xs:annotation>
+              <xs:documentation>Gibt an, ob es sich um einen Referenzdokumentsteckbrief handelt.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="dokumentart" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Gibt die Art des Dokuments an.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="hilfetext" minOccurs="0" type="xoev-lc:String.Latin">
+            <xs:annotation>
+              <xs:documentation>Gibt den Hilfetext für dieses Element.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ElementIdentifikation">
+    <xs:annotation>
+      <xs:documentation>Eindeutige Identifikation eines FIM-Bausteins, bestehend aus der statischen ID und der Versionsnummer.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="id" type="xs:token">
+        <xs:annotation>
+          <xs:documentation>Statischer ID-Bestandteil der eindeutigen Identifikation eines Elements.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="version" minOccurs="0" type="xdf:VersionString">
+        <xs:annotation>
+          <xs:documentation>Versions-Bestandteil der eindeutigen Identifikation eines Elements.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ElementTyp">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>ElementTyp</nameLang>
+          <nameKurz>ElementTyp</nameKurz>
+          <nameTechnisch>XDatenfelder.ElementTyp</nameTechnisch>
+          <kennung>XDatenfelder.ElementTyp</kennung>
+          <beschreibung>Mit dieser Codeliste wird der Typ eines Elements abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="C">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Codeliste</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Dokumentsteckbrief</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="F">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Datenfeld</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="G">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Datenfeldgruppe</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="S">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Stammdatenschema</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Enthaelt">
+    <xs:annotation>
+      <xs:documentation>Abstrakte Basisklasse, um in die Struktur verschiedene Unterelemente einsetzen zu können (entsprich dem XSD Choice).</xs:documentation>
+    </xs:annotation>
+    <xs:choice>
+      <xs:element name="datenfeld" type="xdf:Datenfeld">
+        <xs:annotation>
+          <xs:documentation>Ein Datenfeld als konkrete Instanz.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="datenfeldgruppe" type="xdf:Datenfeldgruppe">
+        <xs:annotation>
+          <xs:documentation>Eine Datenfeldgruppe als konkrete Instanz.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:simpleType name="Feldart">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>Datenfeldart</nameLang>
+          <nameKurz>Feldart</nameKurz>
+          <nameTechnisch>XDatenfelder.Feldart</nameTechnisch>
+          <kennung>XDatenfelder.Feldart</kennung>
+          <beschreibung>Mit dieser Codeliste wird die Feldart eines Datenfeldes abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="input">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Eingabe</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="label">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Statisch</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="select">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Auswahl</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Genericode">
+    <xs:annotation>
+      <xs:documentation>Codeliste im Genericode-Format.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://docs.oasis-open.org/codelist/ns/genericode/1.0/" processContents="strict" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GenericodeIdentification">
+    <xs:annotation>
+      <xs:documentation>Identifikation einer Genericode-Codeliste.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="canonicalIdentification" type="xs:token">
+        <xs:annotation>
+          <xs:documentation>Kanonische ID der Genericode-Codeliste.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="version" type="xs:token">
+        <xs:annotation>
+          <xs:documentation>Version der Genericode-Codeliste.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="canonicalVersionUri" type="xs:token">
+        <xs:annotation>
+          <xs:documentation>Versions-URI der Genericode-Codeliste.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Header">
+    <xs:annotation>
+      <xs:documentation>Technische Angaben für alle Nachrichten.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="nachrichtID" type="xs:token">
+        <xs:annotation>
+          <xs:documentation>ID der Nachricht.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="erstellungszeitpunkt" type="xs:dateTime">
+        <xs:annotation>
+          <xs:documentation>Datum, an dem die Nachricht erzeugt wurde.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="referenzID" minOccurs="0" type="xs:token">
+        <xs:annotation>
+          <xs:documentation>NachrichtenID der Anfrage. Nur bei Antworten.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Nachricht" abstract="true">
+    <xs:annotation>
+      <xs:documentation>Abtrakte Basisklasse für alle Nachrichten.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="header" type="xdf:Header">
+        <xs:annotation>
+          <xs:documentation>Technische Angaben für alle Nachrichten.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Regel">
+    <xs:annotation>
+      <xs:documentation>Eine Regel enthält ein Script, welches die technische Repräsentation einer zu erfüllenden Bedingung wiedergibt.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="xdf:AllgemeineAngaben">
+        <xs:sequence>
+          <xs:element name="script" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Das Script, welches die technische Repräsentation einer zu erfüllenden Bedingung wiedergibt.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Schemaelementangaben" abstract="true">
+    <xs:annotation>
+      <xs:documentation>Abstrakte Basisklasse für Elemente eines Stammdatenschemas (Gruppen und Felder).</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="xdf:AllgemeineAngaben">
+        <xs:sequence>
+          <xs:element name="schemaelementart" type="xdf:Code.Schemaelementart">
+            <xs:annotation>
+              <xs:documentation>Art des Schemaelements</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="hilfetextEingabe" type="xoev-lc:String.Latin">
+            <xs:annotation>
+              <xs:documentation>Erläuternder Hilfetext für den Formularanwender (Bürger/Unternehmen), um zu verdeutlichen, welche Inhalte in einer Gruppe bzw. einem Feld einzugeben sind.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="hilfetextAusgabe" type="xoev-lc:String.Latin">
+            <xs:annotation>
+              <xs:documentation>Erläuternder Hilfetext für den Formularanwender (Bürger/Unternehmen).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="Schemaelementart">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>Schemaelemetart</nameLang>
+          <nameKurz>Schemaelemetart</nameKurz>
+          <nameTechnisch>XDatenfelder.Schemaelementart</nameTechnisch>
+          <kennung>XDatenfelder.Schemaelemetart</kennung>
+          <beschreibung>Mit dieser Codeliste wird die Art eines Schemaelements abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+          <ersteBeschreibungsspalte>bezeichnung</ersteBeschreibungsspalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ABS">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>abstrakt</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HAR">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>harmonisiert</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RNG">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>rechtsnormgebunden</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Stammdatenschema">
+    <xs:annotation>
+      <xs:documentation>Die FIM-Stammdatenschemata werden auf allen föderalen Ebenen auf Basis von Gesetzen, Verordnungen sowie Verwaltungs- und Ausführungsvorschriften unter Anwendung des Redaktionsprozesses entwickelt. Stammdatenschemata sollen Allgemeingültigkeit besitzen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="xdf:AllgemeineAngaben">
+        <xs:sequence>
+          <xs:element name="hilfetext" minOccurs="0" type="xoev-lc:String.Latin">
+            <xs:annotation>
+              <xs:documentation>Hilfetext zu diesem Element.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ableitungsmodifikationenStruktur" type="xdf:Code.AbleitungsmodifikationenStruktur">
+            <xs:annotation>
+              <xs:documentation>Strukturelle Ableitungsmodifikation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ableitungsmodifikationenRepraesentation" type="xdf:Code.AbleitungsmodifikationenRepraesentation">
+            <xs:annotation>
+              <xs:documentation>Ableitungsmodifikation der Repräsentation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="regel" minOccurs="0" maxOccurs="unbounded" type="xdf:Regel">
+            <xs:annotation>
+              <xs:documentation>Die Regeln geben Bedingungen für korrekt begefüllte Stammdatenschemata vor.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="struktur" minOccurs="0" maxOccurs="unbounded" type="xdf:Struktur">
+            <xs:annotation>
+              <xs:documentation>Die Struktur listet alle Unterelement auf.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Struktur">
+    <xs:annotation>
+      <xs:documentation>Die Struktur listet ein Unterelement eines übergeordneten Elements auf.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="anzahl" type="xdf:AnzahlString">
+        <xs:annotation>
+          <xs:documentation>Die Anzahl definiert, wie oft das Unterelement minimal und maximal enthalten sein kann.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="bezug" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>Dieses Attribut ermöglicht es, Bezüge zu einschlägigen Rechtsnormen sowie in anderen Vorhaben wie den XÖV-Vorhaben (z.B. XWaffe) oder Vorhaben wie P23R gleich oder ähnlich definierten Datencontainer zu erstellen und diese Verbindung zu dokumentieren. Hierdurch lässt sich die Ausgestaltung eines Elements gemäß einschlägigen Rechtsnormen oder Standardisierungsverfahren belegen.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="enthaelt" type="xdf:Enthaelt">
+        <xs:annotation>
+          <xs:documentation>Das enthaltene Unterelement.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Suchanfrage">
+    <xs:annotation>
+      <xs:documentation>Die Suchanfrage legt fest, wonach an welchen Stellen gesucht werden soll.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="elementTyp" maxOccurs="5" type="xdf:Code.ElementTyp">
+        <xs:annotation>
+          <xs:documentation>Der ElementTyp, nach dem gesucht werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="begriff" type="xoev-lc:String.Latin">
+        <xs:annotation>
+          <xs:documentation>Der Begriff, nach dem gesucht werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="felder" maxOccurs="unbounded" type="xdf:Code.Suchfeld">
+        <xs:annotation>
+          <xs:documentation>Die Felder, in denen gesucht werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="status" minOccurs="0" type="xdf:Code.Status">
+        <xs:annotation>
+          <xs:documentation>Der Status, nach dem gesucht werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ableitungsmodifikationenStruktur" minOccurs="0" type="xdf:Code.AbleitungsmodifikationenStruktur">
+        <xs:annotation>
+          <xs:documentation>Die Ableitungsmodifikation bezüglich der Struktur, nach der gesucht werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ableitungsmodifikationenRepraesentation" minOccurs="0" type="xdf:Code.AbleitungsmodifikationenRepraesentation">
+        <xs:annotation>
+          <xs:documentation>Die Ableitungsmodifikation bezüglich der Repräsentation, nach der gesucht werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="schemaelementart" minOccurs="0" type="xdf:Code.Schemaelementart">
+        <xs:annotation>
+          <xs:documentation>Die Schemaelementart, nach der gesucht werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="feldart" minOccurs="0" type="xdf:Code.Feldart">
+        <xs:annotation>
+          <xs:documentation>Die Feldart, nach der gesucht werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="datentyp" minOccurs="0" type="xdf:Code.Datentyp">
+        <xs:annotation>
+          <xs:documentation>Der Datentyp, nach dem gesucht werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="gueltigAbNach" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Es soll nach Elementen gesucht werden, deren GültigkeitAb an oder nach diesem Datum liegen soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="gueltigAbVor" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Es soll nach Elementen gesucht werden, deren GültigkeitAb an oder vor diesem Datum liegen soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="gueltigBisNach" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Es soll nach Elementen gesucht werden, deren GültigkeitBis an oder nach diesem Datum liegen soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="gueltigBisVor" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Es soll nach Elementen gesucht werden, deren GültigkeitBis an oder vor diesem Datum liegen soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="freigabedatumNach" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Es soll nach Elementen gesucht werden, deren Freigabedatum an oder nach diesem Datum liegen soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="freigabedatumVor" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Es soll nach Elementen gesucht werden, deren Freigabedatum an oder vor diesem Datum liegen soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="veroeffentlichungsdatumNach" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Es soll nach Elementen gesucht werden, deren Veröffentlichungsdatum an oder nach diesem Datum liegen soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="veroeffentlichungsdatumVor" minOccurs="0" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Es soll nach Elementen gesucht werden, deren Veröffentlichungsdatum an oder vor diesem Datum liegen soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Suchergebnis">
+    <xs:annotation>
+      <xs:documentation>Abstrakte Basisklasse, um die verschiedene Arten von Suchergebnissen darstellen zu können (entsprich dem XSD Choice).</xs:documentation>
+    </xs:annotation>
+    <xs:choice>
+      <xs:element name="dokumentsteckbrief" type="xdf:Dokumentsteckbrief">
+        <xs:annotation>
+          <xs:documentation>Ein Dokumentstreckbrief als konkrete Instanz.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="stammdatenschema" type="xdf:Stammdatenschema">
+        <xs:annotation>
+          <xs:documentation>Ein Stammdatenschema als konkrete Instanz.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="datenfeldgruppe" type="xdf:Datenfeldgruppe">
+        <xs:annotation>
+          <xs:documentation>Eine Datenfeldgruppe als konkrete Instanz.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="datenfeld" type="xdf:Datenfeld">
+        <xs:annotation>
+          <xs:documentation>Ein Datenfeld als konkrete Instanz.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="codeliste" type="xdf:Codeliste">
+        <xs:annotation>
+          <xs:documentation>Eine Codeliste als konkrete Instanz.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:simpleType name="Suchfeld">
+    <xs:annotation>
+      <xs:appinfo>
+        <codeliste>
+          <nameLang>Suchfeld</nameLang>
+          <nameKurz>Suchfeld</nameKurz>
+          <nameTechnisch>XDatenfelder.Suchfeld</nameTechnisch>
+          <kennung>XDatenfelder.Suchfeld</kennung>
+          <beschreibung>Mit dieser Codeliste werden die verschiedenen Felder, in denen gesucht werden kann, abgebildet.</beschreibung>
+        </codeliste>
+        <versionCodeliste>
+          <version>1.0</version>
+        </versionCodeliste>
+        <codelistenspalten>
+          <codeSpalte>code</codeSpalte>
+        </codelistenspalten>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="beschreibung">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Beschreibung</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="bezeichnungAusgabe">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Bezeichnung Ausgabe</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="bezeichnungEingabe">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Bezeichnung Eingabe</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="bezug">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Bezug</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="codelistenWerte">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Codelistenwerte</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="definition">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Definition</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="hilfetext">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Hilfetext</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="hilfetextAusgabe">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Hilfetext Ausgabe</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="hilfetextEingabe">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Hilfetext Eingabe</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="id">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>ID</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="inhalt">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Inhalt</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="name">
+        <xs:annotation>
+          <xs:appinfo>
+            <wertErsteBeschreibungsspalte>Name</wertErsteBeschreibungsspalte>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

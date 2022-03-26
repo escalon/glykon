@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress XmlDefaultAttributeValue -->
+<xdf:xdatenfelder.stammdatenschema.0102 xmlns:xdf="urn:xoev-de:fim:standard:xdatenfelder_2"
+                                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                        xsi:schemaLocation="urn:xoev-de:fim:standard:xdatenfelder_2 ../xsd/xdatenfelder.xsd">
+  <xdf:header>
+    <xdf:nachrichtID>79118DBD6E4BC61A</xdf:nachrichtID>
+    <xdf:erstellungszeitpunkt>2022-03-20T13:31:49.174163Z</xdf:erstellungszeitpunkt>
+  </xdf:header>
+  <xdf:stammdatenschema>
+    <xdf:identifikation>
+      <xdf:id>S05000058</xdf:id>
+      <xdf:version>1.0</xdf:version>
+    </xdf:identifikation>
+    <xdf:name>Antrag auf Erteilung / Verlängerung Bewohnerparkausweis</xdf:name>
+    <xdf:bezeichnungEingabe>Antrag auf Erteilung / Verlängerung Bewohnerparkausweis</xdf:bezeichnungEingabe>
+    <xdf:beschreibung>Der vorliegende Dokumentenstreckbrief / das vorliegende Stammdatenschema wurde mit Bezug auf
+      folgende(n) LeiKa-ID(s) erstellt: Bewohnerparkausweis Erteilung(99108001001000) + Bewohnerparkausweis
+      Verlängerung(99108001020000).
+    </xdf:beschreibung>
+    <xdf:definition>Bürger können für Ihr Kraftfahrzeug bei der zuständigen Straßenverkehrsbehörde oder zuständigen
+      Gemeinde einen Bewohnerparkausweis beantragen. Der Bewohnerparkausweis gilt nur für ausgewiesene Zonen.&#xD;
+      Einen Anspruch auf Erteilung hat, wer in diesen Bereichen gemeldet ist und dort tatsächlich wohnt. Je Bewohner
+      kann nur ein Parkausweis erteilt werden, für ein auf ihn zugelassenes oder dauerhaft genutztes Kraftfahrzeug.
+      Gemeinden können eine Erteilung von bestimmten Voraussetzungen abhängig machen (bspw. dem Hauptwohnsitz).
+    </xdf:definition>
+    <xdf:bezug>Als Rechtsgrundlage dient die Straßenverkehrsordnung § 45 Absatz 1b Nummer 2 Straßenverkehrs-Ordnung
+      (StVO), § 46 Absatz 1 Nummer 11 Straßenverkehrs-Ordnung (StVO) und § 45 der Allgemeine Verwaltungsvorschrift&#xD;
+      zur Straßenverkehrs-Ordnung (VwV-StVO). Unter welchen Voraussetzungen Städte und Gemeinden gesonderte
+      Parkgenehmigungen erteilen, ist bei der zuständigen Straßenverkehrsbehörde entsprechenden und jeweiligen
+      Verwaltungen zu erfragen. &#xD;
+      &#xD;
+    </xdf:bezug>
+    <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+      <code>aktiv</code>
+    </xdf:status>
+    <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+    <xdf:freigabedatum>2021-10-20</xdf:freigabedatum>
+    <xdf:veroeffentlichungsdatum>2021-05-05</xdf:veroeffentlichungsdatum>
+    <xdf:ableitungsmodifikationenStruktur
+        listURI="urn:xoev-de:fim:codeliste:xdatenfelder.ableitungsmodifikationenStruktur" listVersionID="1.0">
+      <code>3</code>
+    </xdf:ableitungsmodifikationenStruktur>
+    <xdf:ableitungsmodifikationenRepraesentation
+        listURI="urn:xoev-de:fim:codeliste:xdatenfelder.ableitungsmodifikationenRepraesentation" listVersionID="1.0">
+      <code>1</code>
+    </xdf:ableitungsmodifikationenRepraesentation>
+    <xdf:regel>
+      <xdf:identifikation>
+        <xdf:id>R05000281</xdf:id>
+        <xdf:version>1.0</xdf:version>
+      </xdf:identifikation>
+      <xdf:name>Angaben zur Fahrzeughalterin, zum Fahrzeughalter</xdf:name>
+      <xdf:bezeichnungEingabe></xdf:bezeichnungEingabe>
+      <xdf:beschreibung></xdf:beschreibung>
+      <xdf:definition>Wenn bei F05001047 "02 Das Fahrzeug ist auf einen anderen Halter zugelassen." angegeben wird, dann
+        wird G05000499 zur Pflichtangabe.
+      </xdf:definition>
+      <xdf:bezug></xdf:bezug>
+      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+        <code>aktiv</code>
+      </xdf:status>
+      <xdf:fachlicherErsteller>Nancy_Bernhardt</xdf:fachlicherErsteller>
+      <xdf:script>function script() {&#xD;
+        &#xD;
+        }
+      </xdf:script>
+    </xdf:regel>
+    <xdf:struktur>
+      <xdf:anzahl>1:1</xdf:anzahl>
+      <xdf:bezug></xdf:bezug>
+      <xdf:enthaelt>
+        <xdf:datenfeld>
+          <xdf:identifikation>
+            <xdf:id>F00-4cb0dd14-629c-4661-9435-4e9eadc43e07</xdf:id>
+            <xdf:version>1.0</xdf:version>
+          </xdf:identifikation>
+          <xdf:name>Einwilligungserklärungstext Verarbeitung personenbezogener Daten</xdf:name>
+          <xdf:bezeichnungEingabe>Einwilligung zur Verarbeitung personenbezogener Daten</xdf:bezeichnungEingabe>
+          <xdf:bezeichnungAusgabe>Datenschutzerklärung</xdf:bezeichnungAusgabe>
+          <xdf:beschreibung></xdf:beschreibung>
+          <xdf:definition></xdf:definition>
+          <xdf:bezug>Datenverarbeitung nach Art. 6 Abs. 1 lit. A DSGVO&#xD;
+            "Die Verarbeitung ist nur rechtmäßig, wenn mindestens eine der nachstehenden Bedingungen erfüllt ist:&#xD;
+            Die betroffene Person hat ihre Einwilligung zu der Verarbeitung der sie betreffenden personenbezogenen Daten
+            für einen oder mehrere bestimmte Zwecke gegeben."
+          </xdf:bezug>
+          <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+            <code>aktiv</code>
+          </xdf:status>
+          <xdf:fachlicherErsteller>Lena Scheffel</xdf:fachlicherErsteller>
+          <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart" listVersionID="1.0">
+            <code>RNG</code>
+          </xdf:schemaelementart>
+          <xdf:hilfetextEingabe>Bitte stimmen Sie der Datenverarbeitung nach Art. 6 Abs. 1 lit. a DSGVO zu.
+          </xdf:hilfetextEingabe>
+          <xdf:hilfetextAusgabe>Zustimmung zur Datenverarbeitung nach Art. 6 Abs. 1 lit. a DSGVO</xdf:hilfetextAusgabe>
+          <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+            <code>select</code>
+          </xdf:feldart>
+          <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+            <code>text</code>
+          </xdf:datentyp>
+          <xdf:praezisierung></xdf:praezisierung>
+          <xdf:inhalt></xdf:inhalt>
+          <xdf:codelisteReferenz>
+            <xdf:identifikation>
+              <xdf:id>C05000073</xdf:id>
+            </xdf:identifikation>
+            <xdf:genericodeIdentification>
+              <xdf:canonicalIdentification>urn:de:fim:codeliste:zustimmung</xdf:canonicalIdentification>
+              <xdf:version>2021-01-11</xdf:version>
+              <xdf:canonicalVersionUri>urn:de:fim:codeliste:zustimmung_2021-01-11</xdf:canonicalVersionUri>
+            </xdf:genericodeIdentification>
+          </xdf:codelisteReferenz>
+        </xdf:datenfeld>
+      </xdf:enthaelt>
+    </xdf:struktur>
+    <xdf:struktur>
+      <xdf:anzahl>1:1</xdf:anzahl>
+      <xdf:bezug></xdf:bezug>
+      <xdf:enthaelt>
+        <xdf:datenfeld>
+          <xdf:identifikation>
+            <xdf:id>F05001344</xdf:id>
+            <xdf:version>1.0</xdf:version>
+          </xdf:identifikation>
+          <xdf:name>Einverständniserklärung Abgleich Melderegister</xdf:name>
+          <xdf:bezeichnungEingabe>Einwilligung zum Abgleich mit dem Melde- und Zulassungsregister
+          </xdf:bezeichnungEingabe>
+          <xdf:bezeichnungAusgabe>Einwilligung zum Abgleich mit dem Melde- und Zulassungsregister
+          </xdf:bezeichnungAusgabe>
+          <xdf:beschreibung></xdf:beschreibung>
+          <xdf:definition></xdf:definition>
+          <xdf:bezug></xdf:bezug>
+          <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+            <code>aktiv</code>
+          </xdf:status>
+          <xdf:fachlicherErsteller>NancyBernhardt</xdf:fachlicherErsteller>
+          <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart" listVersionID="1.0">
+            <code>RNG</code>
+          </xdf:schemaelementart>
+          <xdf:hilfetextEingabe>Der Online-Antrag beinhaltet einen Abgleich mit dem Melde- und Zulassungsregister.
+            Sollte dieser Abgleich nicht erfolgreich durchgeführt werden können, ist eine Vorsprache zwingend
+            erforderlich. Bitte stimmen Sie dem Datenabgleich zu.
+          </xdf:hilfetextEingabe>
+          <xdf:hilfetextAusgabe>Einwilligung zum Abgleich mit dem Melde- und Zulassungsregister</xdf:hilfetextAusgabe>
+          <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+            <code>select</code>
+          </xdf:feldart>
+          <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+            <code>text</code>
+          </xdf:datentyp>
+          <xdf:praezisierung></xdf:praezisierung>
+          <xdf:inhalt></xdf:inhalt>
+          <xdf:codelisteReferenz>
+            <xdf:identifikation>
+              <xdf:id>C05000112</xdf:id>
+            </xdf:identifikation>
+            <xdf:genericodeIdentification>
+              <xdf:canonicalIdentification>Bestätigung</xdf:canonicalIdentification>
+              <xdf:version>0.1</xdf:version>
+              <xdf:canonicalVersionUri>Bestätigung_0.1</xdf:canonicalVersionUri>
+            </xdf:genericodeIdentification>
+          </xdf:codelisteReferenz>
+        </xdf:datenfeld>
+      </xdf:enthaelt>
+    </xdf:struktur>
+    <xdf:struktur>
+      <xdf:anzahl>1:1</xdf:anzahl>
+      <xdf:bezug></xdf:bezug>
+      <xdf:enthaelt>
+        <xdf:datenfeldgruppe>
+          <xdf:identifikation>
+            <xdf:id>G05000496</xdf:id>
+            <xdf:version>1.0</xdf:version>
+          </xdf:identifikation>
+          <xdf:name>Angaben zur antragstellenden Person</xdf:name>
+          <xdf:bezeichnungEingabe>Angaben zur antragstellenden Person</xdf:bezeichnungEingabe>
+          <xdf:bezeichnungAusgabe>Angaben zur antragstellenden Person</xdf:bezeichnungAusgabe>
+          <xdf:beschreibung></xdf:beschreibung>
+          <xdf:definition>Das Staatsangehörigkeitsgesetz erfordert teils spezifischere Angaben zum Antragssteller als
+            vergleichbare Datenfeldgruppen
+          </xdf:definition>
+          <xdf:bezug>Staatsangehörigkeitsgesetz</xdf:bezug>
+          <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+            <code>aktiv</code>
+          </xdf:status>
+          <xdf:fachlicherErsteller>MKFFI-NRW</xdf:fachlicherErsteller>
+          <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart" listVersionID="1.0">
+            <code>RNG</code>
+          </xdf:schemaelementart>
+          <xdf:hilfetextEingabe>Bitte geben Sie hier die weiteren Daten ein</xdf:hilfetextEingabe>
+          <xdf:hilfetextAusgabe>Bitte geben Sie hier die weiteren Daten ein</xdf:hilfetextAusgabe>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05000059</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Familienname</xdf:name>
+                <xdf:bezeichnungEingabe>Familienname</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Familienname</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung>Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 120</xdf:beschreibung>
+                <xdf:definition>Familienname</xdf:definition>
+                <xdf:bezug>XÖV-Kernkoponente.NameNatuerlichePerson.familienname</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>MKFFI NRW</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie bitte Ihren Familiennamen an.</xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Familienname</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung>{"minLength":"1","maxLength":"120"}</xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:*</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05000060</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Vorname</xdf:name>
+                <xdf:bezeichnungEingabe>Vorname</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Vorname</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition>Vorname einer natürlichen Person.</xdf:definition>
+                <xdf:bezug>XÖV-Kernkoponente.NameNatuerlichePerson.vorname</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>MKFFI</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie bitte Ihre Vornamen an. Es empfiehlt sich die Vornamen genau so
+                  anzugeben, wie sie auf den offiziellen Ausweisdokumenten, z. B. Personalausweis angegeben sind.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Dieses Feld enthält einen Vornamen.</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung>{"minLength":"1","maxLength":"80"}</xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05000351</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Geburtsdatum</xdf:name>
+                <xdf:bezeichnungEingabe>Geburtsdatum</xdf:bezeichnungEingabe>
+                <xdf:beschreibung>-</xdf:beschreibung>
+                <xdf:definition>Dieses Feld beinhaltet das Geburtsdatum, also Tag, Monat und Jahr der Vollendung der
+                  Geburt.
+                </xdf:definition>
+                <xdf:bezug>XÖV-Kernkomponente.Geburt.datum</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie Tag, Monat und Jahr der Geburt an.</xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Dieses Feld enthält das Geburtsdatum, also Tag, Monat und Jahr der Geburt.
+                </xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>date</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001354</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>E-Mail</xdf:name>
+                <xdf:bezeichnungEingabe>E-Mail</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>E-Mail</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition>E-Mail-Adresse orientiert am bestehenden harmonisierten Datenfeld: &#xD;
+                  F00000071V1.5
+                </xdf:definition>
+                <xdf:bezug>RFC 5322; RFC 5321</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie bitte Ihre E-Mail-Adresse an.</xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>E-Mail-Adresse</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>0:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05000067</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Telefon</xdf:name>
+                <xdf:bezeichnungEingabe>Telefonnummer</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Telefonnummer</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung>Dieses Feld wurde angelehnt an ITU E.123. eine Prüfung über ein Pattern erfolgt nicht,
+                  um den Eingebenden nicht zu überfordern.
+                </xdf:beschreibung>
+                <xdf:definition>Das Feld entspricht dem harmonisierten Datenfeld F00000069V1.4</xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>MKFFI-NRW</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie bitte bei Telefonnummern innerhalb Deutschlands zuerst die
+                  Ortsvorwahl/Mobilnetzvorwahl in Klammern, gefolgt von der Rufnummer an, z. B. (0211) 12345678.&#xD;
+                  &#xD;
+                  Geben Sie bitte bei Telefonnummern außerhalb von Deutschland zuerst den Internationalen Ländercode mit
+                  vorgestelltem Plus, gefolgt von der Ortsvorwahl/Mobilnetzvorwahl ohne der führenden Null, gefolgt von
+                  der Rufnummer an, z.B. +49 211 123456789.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Telefonnummer mit Vorwahl und gegebenenfalls Ländervorwahl.</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung>{"minLength":"1","maxLength":"23"}</xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>0:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05000068</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Handynummer</xdf:name>
+                <xdf:bezeichnungEingabe>Handynummer</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Handynummer</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition>Handynummer</xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>MKFFI.NRW</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie bitte Ihre Handynummer an. Innerhalb Deutschlands zuerst die
+                  Mobilnetzvorwahl in Klammern, gefolgt von der Rufnummer an, z. B. (0171) 123456789.&#xD;
+                  &#xD;
+                  Geben Sie bitte bei Handynummern außerhalb von Deutschland zuerst den Internationalen Ländercode mit
+                  vorgestelltem Plus, gefolgt von der Mobilnetzvorwahl ohne der führenden Null, gefolgt von der
+                  Rufnummer an, z. B. +49 171 123456789.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Handynummer</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung>{"minLength":"6","maxLength":"20"}</xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeldgruppe>
+                <xdf:identifikation>
+                  <xdf:id>G05000428</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Straßenangaben</xdf:name>
+                <xdf:bezeichnungEingabe>Straßenangaben</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Straßenangaben</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung>Zu beachten: wird die Anschrift im Kontext der Online-Ausweisfunktion des neuen
+                  Personalausweis verwendet, können Straße und Hausnummer nur in einem Datenfeld gemeinsam ausgelesen
+                  werden (siehe auch QUELLE ERGÄNZEN). Bei der Umsetzung müssen somit Straße und Hausnummer in einem
+                  Feld zusammengefasst werden. Der Hausnummerzusatz ist ebenfalls Bestandteil dieses Kombifeldes.
+                </xdf:beschreibung>
+                <xdf:definition>Diese Feldgruppe enthält Angaben zur Straße der Anschrift. Die Bezeichnung sowie ggf.
+                  Zusatzinformationen zu der Straße.
+                </xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>KoSIT</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Diese Feldgruppe enthält Angaben zur Straße der Anschrift. Die Bezeichnung sowie
+                  ggf. Zusatzinformationen zu der Straße.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Diese Feldgruppe enthält Angaben zur Straße der Anschrift. Die Bezeichnung sowie
+                  ggf. Zusatzinformationen zu der Straße.
+                </xdf:hilfetextAusgabe>
+                <xdf:struktur>
+                  <xdf:anzahl>1:1</xdf:anzahl>
+                  <xdf:bezug></xdf:bezug>
+                  <xdf:enthaelt>
+                    <xdf:datenfeld>
+                      <xdf:identifikation>
+                        <xdf:id>F00000053</xdf:id>
+                        <xdf:version>1.1</xdf:version>
+                      </xdf:identifikation>
+                      <xdf:name>Straße</xdf:name>
+                      <xdf:bezeichnungEingabe>Straße</xdf:bezeichnungEingabe>
+                      <xdf:bezeichnungAusgabe>Straße</xdf:bezeichnungAusgabe>
+                      <xdf:beschreibung>Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 50. XInneres 7 ist
+                        die Feldlänge &lt;= 55 Zeichen.
+                      </xdf:beschreibung>
+                      <xdf:definition>Es ist die Bezeichnung der Straße anzugeben.</xdf:definition>
+                      <xdf:bezug>Xinneres 7 Meldeanschrift.Strasse</xdf:bezug>
+                      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                        <code>aktiv</code>
+                      </xdf:status>
+                      <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                      <xdf:versionshinweis>Ausgabebezeichnung hinzugefügt</xdf:versionshinweis>
+                      <xdf:veroeffentlichungsdatum>2020-03-12</xdf:veroeffentlichungsdatum>
+                      <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                            listVersionID="1.0">
+                        <code>HAR</code>
+                      </xdf:schemaelementart>
+                      <xdf:hilfetextEingabe>Geben Sie die Bezeichnung der Straße ohne Angabe der Hausnummer oder
+                        weiterer Zusätze an.
+                      </xdf:hilfetextEingabe>
+                      <xdf:hilfetextAusgabe>Dieses Feld enthält die Bezeichnung der Straße.&#xD;
+                      </xdf:hilfetextAusgabe>
+                      <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                        <code>input</code>
+                      </xdf:feldart>
+                      <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                        <code>text</code>
+                      </xdf:datentyp>
+                      <xdf:praezisierung>{"minLength":"1","maxLength":"55"}</xdf:praezisierung>
+                      <xdf:inhalt></xdf:inhalt>
+                    </xdf:datenfeld>
+                  </xdf:enthaelt>
+                </xdf:struktur>
+                <xdf:struktur>
+                  <xdf:anzahl>1:1</xdf:anzahl>
+                  <xdf:bezug></xdf:bezug>
+                  <xdf:enthaelt>
+                    <xdf:datenfeld>
+                      <xdf:identifikation>
+                        <xdf:id>F00000016</xdf:id>
+                        <xdf:version>1.2</xdf:version>
+                      </xdf:identifikation>
+                      <xdf:name>Hausnummer</xdf:name>
+                      <xdf:bezeichnungEingabe>Hausnummer</xdf:bezeichnungEingabe>
+                      <xdf:bezeichnungAusgabe>Hausnummer</xdf:bezeichnungAusgabe>
+                      <xdf:beschreibung>Die Modellierung aus XInneres wurde nicht 1:1 übernommen, um die Komplexität für
+                        die Ausfüllenden nicht zu hoch zu setzen. Es wurde darauf verzichtet für das Ende von
+                        Hausnummernbereichen eigene Felder zu modellieren. Daher ist die Feldlänge hier heraufgesetzt
+                        und eine entsprechende Beschreibung wurde eingefügt.Die Feldlänge setzt sich aus der maximalen
+                        Feldlänge zweier Hausnummer jeweils 4) und 1 Zeichen (-) zusammen.
+                      </xdf:beschreibung>
+                      <xdf:definition>Es sind nur die Ziffern einer Hausnummer anzugeben. Eine Hausnummer dient der
+                        genauen Lokalisierung eines Grundstücks, Gebäudes oder Gebäudeteils (Eingang) in einer Strasse.
+                        Geben Sie Hausnummernbereiche immer nach folgendem Beispiel ohne Leerzeichen an: 12-14
+                      </xdf:definition>
+                      <xdf:bezug>Xinneres.Meldeanschrift.Hausnummer</xdf:bezug>
+                      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                        <code>aktiv</code>
+                      </xdf:status>
+                      <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                      <xdf:versionshinweis>Beschreibung hinzugefügt.</xdf:versionshinweis>
+                      <xdf:veroeffentlichungsdatum>2020-03-12</xdf:veroeffentlichungsdatum>
+                      <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                            listVersionID="1.0">
+                        <code>HAR</code>
+                      </xdf:schemaelementart>
+                      <xdf:hilfetextEingabe>Geben Sie nur die Ziffern der Hausnummer der Anschrift an (z.B. 124). Die
+                        Straße und Hausnummerzusätze (z.B.: A bei 124A) sind getrennt anzugeben.
+                      </xdf:hilfetextEingabe>
+                      <xdf:hilfetextAusgabe>Dieses Feld enthält nur die Ziffern der Hausnummer der Anschrift.
+                      </xdf:hilfetextAusgabe>
+                      <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                        <code>input</code>
+                      </xdf:feldart>
+                      <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                        <code>text</code>
+                      </xdf:datentyp>
+                      <xdf:praezisierung>{"minLength":"1","maxLength":"9"}</xdf:praezisierung>
+                      <xdf:inhalt></xdf:inhalt>
+                    </xdf:datenfeld>
+                  </xdf:enthaelt>
+                </xdf:struktur>
+                <xdf:struktur>
+                  <xdf:anzahl>0:1</xdf:anzahl>
+                  <xdf:bezug></xdf:bezug>
+                  <xdf:enthaelt>
+                    <xdf:datenfeld>
+                      <xdf:identifikation>
+                        <xdf:id>F00000084</xdf:id>
+                        <xdf:version>1.1</xdf:version>
+                      </xdf:identifikation>
+                      <xdf:name>Hausnummerzusatz</xdf:name>
+                      <xdf:bezeichnungEingabe>Hausnummerzusatz</xdf:bezeichnungEingabe>
+                      <xdf:bezeichnungAusgabe>Hausnummerzusatz</xdf:bezeichnungAusgabe>
+                      <xdf:beschreibung></xdf:beschreibung>
+                      <xdf:definition>Es sind Buchstaben oder Zusatzziffern zur Hausnummer anzugeben. Beispiel: 124 A,
+                        109.5
+                      </xdf:definition>
+                      <xdf:bezug>Xinneres7 Meldeanschrift.HausnummerBuchstabeZusatzziffer</xdf:bezug>
+                      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                        <code>aktiv</code>
+                      </xdf:status>
+                      <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                      <xdf:versionshinweis>Ausgabebezeichnung hinzugefügt</xdf:versionshinweis>
+                      <xdf:veroeffentlichungsdatum>2020-03-12</xdf:veroeffentlichungsdatum>
+                      <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                            listVersionID="1.0">
+                        <code>HAR</code>
+                      </xdf:schemaelementart>
+                      <xdf:hilfetextEingabe>Geben Sie Buchstaben oder Zusatzziffern zur Hausnummer an (z.B.: a bei
+                        124a).
+                      </xdf:hilfetextEingabe>
+                      <xdf:hilfetextAusgabe>Dieses Feld enthält Buchstaben oder Zusatzziffern zur Hausnummer.
+                      </xdf:hilfetextAusgabe>
+                      <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                        <code>input</code>
+                      </xdf:feldart>
+                      <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                        <code>text</code>
+                      </xdf:datentyp>
+                      <xdf:praezisierung>{"minLength":"1","pattern":"[\\p{L}0-9. ]*","maxLength":"2"}
+                      </xdf:praezisierung>
+                      <xdf:inhalt></xdf:inhalt>
+                    </xdf:datenfeld>
+                  </xdf:enthaelt>
+                </xdf:struktur>
+              </xdf:datenfeldgruppe>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeldgruppe>
+                <xdf:identifikation>
+                  <xdf:id>G00000113</xdf:id>
+                  <xdf:version>1.2</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Ort Inland (ohne Ortsteil)</xdf:name>
+                <xdf:bezeichnungEingabe>Angaben zum Ort</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Angaben zum Ort</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition>Ort Inland (ohne Ortsteil)</xdf:definition>
+                <xdf:bezug>XÖV-Kernkomponente.Anschrift</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                <xdf:versionshinweis>aktuelle Datenfelder eingefügt</xdf:versionshinweis>
+                <xdf:veroeffentlichungsdatum>2020-03-12</xdf:veroeffentlichungsdatum>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>HAR</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Angaben zum Ort</xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Angaben zum Ort</xdf:hilfetextAusgabe>
+                <xdf:struktur>
+                  <xdf:anzahl>1:1</xdf:anzahl>
+                  <xdf:bezug>&#xD;
+                  </xdf:bezug>
+                  <xdf:enthaelt>
+                    <xdf:datenfeld>
+                      <xdf:identifikation>
+                        <xdf:id>F00000054</xdf:id>
+                        <xdf:version>1.2</xdf:version>
+                      </xdf:identifikation>
+                      <xdf:name>Postleitzahl</xdf:name>
+                      <xdf:bezeichnungEingabe>Postleitzahl</xdf:bezeichnungEingabe>
+                      <xdf:bezeichnungAusgabe>Postleitzahl</xdf:bezeichnungAusgabe>
+                      <xdf:beschreibung></xdf:beschreibung>
+                      <xdf:definition>Es ist die Postleitzahl anzugeben.&#xD;
+                        &#xD;
+                        Der Typ dieses Elements ist eine Einschränkung des Basistyps String.Latin.
+                      </xdf:definition>
+                      <xdf:bezug>Xinneres.Meldeanschrift.Postleitzahl</xdf:bezug>
+                      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                        <code>aktiv</code>
+                      </xdf:status>
+                      <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                      <xdf:versionshinweis>Ausgabebezeichnung hinzugefügt</xdf:versionshinweis>
+                      <xdf:veroeffentlichungsdatum>2020-03-12</xdf:veroeffentlichungsdatum>
+                      <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                            listVersionID="1.0">
+                        <code>HAR</code>
+                      </xdf:schemaelementart>
+                      <xdf:hilfetextEingabe>Geben Sie die Postleitzahl des Ortes an (z.B.: 10115).
+                      </xdf:hilfetextEingabe>
+                      <xdf:hilfetextAusgabe>Dieses Feld enthält die Postleitzahl/Kennzahl des Ortes.
+                      </xdf:hilfetextAusgabe>
+                      <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                        <code>input</code>
+                      </xdf:feldart>
+                      <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                        <code>text</code>
+                      </xdf:datentyp>
+                      <xdf:praezisierung>
+                        {"minLength":"5","pattern":"([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}","maxLength":"5"}
+                      </xdf:praezisierung>
+                      <xdf:inhalt></xdf:inhalt>
+                    </xdf:datenfeld>
+                  </xdf:enthaelt>
+                </xdf:struktur>
+                <xdf:struktur>
+                  <xdf:anzahl>1:1</xdf:anzahl>
+                  <xdf:bezug>&#xD;
+                  </xdf:bezug>
+                  <xdf:enthaelt>
+                    <xdf:datenfeld>
+                      <xdf:identifikation>
+                        <xdf:id>F00000035</xdf:id>
+                        <xdf:version>1.2</xdf:version>
+                      </xdf:identifikation>
+                      <xdf:name>Ort</xdf:name>
+                      <xdf:bezeichnungEingabe>Ort</xdf:bezeichnungEingabe>
+                      <xdf:bezeichnungAusgabe>Ort</xdf:bezeichnungAusgabe>
+                      <xdf:beschreibung>Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 44. Laut PAuswV 2*25
+                        = 50 Zeichen. Laut XInneres 7 Meldeanschrift.Wohnort 40 Zeichen.
+                      </xdf:beschreibung>
+                      <xdf:definition>Der "Ort" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt).
+                      </xdf:definition>
+                      <xdf:bezug>PAuswG vom 21.6.2019, §5, Abs. 2 (Anschrift); PAuswV vom 28.9.2017, Anhang 3 (Wohnort);
+                        BSI TR-03123, Version 1.5.1; XInneres 7, Meldeanschrift.Wohnort;
+                        XÖV-Kernkomponente.Anschrift.ort
+                      </xdf:bezug>
+                      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                        <code>aktiv</code>
+                      </xdf:status>
+                      <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                      <xdf:versionshinweis>Strukturelementart geändert. Ausgabebezeichnung eingefügt.
+                      </xdf:versionshinweis>
+                      <xdf:veroeffentlichungsdatum>2020-03-12</xdf:veroeffentlichungsdatum>
+                      <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                            listVersionID="1.0">
+                        <code>HAR</code>
+                      </xdf:schemaelementart>
+                      <xdf:hilfetextEingabe>Geben Sie den Ort an.</xdf:hilfetextEingabe>
+                      <xdf:hilfetextAusgabe>Dieses Feld enthält den Ort.</xdf:hilfetextAusgabe>
+                      <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                        <code>input</code>
+                      </xdf:feldart>
+                      <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                        <code>text</code>
+                      </xdf:datentyp>
+                      <xdf:praezisierung>{"minLength":"1","maxLength":"50"}</xdf:praezisierung>
+                      <xdf:inhalt></xdf:inhalt>
+                    </xdf:datenfeld>
+                  </xdf:enthaelt>
+                </xdf:struktur>
+              </xdf:datenfeldgruppe>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05000523</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Land</xdf:name>
+                <xdf:bezeichnungEingabe>Land</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Land</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung>Verwendete Codeliste: Staat 2020-05-11</xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug>XMeld.type.AnschriftMelderecht.Ausland.staat Version 2.4.4; &#xD;
+                  Codeliste laut Xmeld und DSMeld: Codeliste Destatis Staat
+                  (urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat)
+                </xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>OFA-Labor</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie den Namen des Landes bzw. des Staates an, Beispiel Deutschland.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Dieses Feld enthält den Namen des Landes/ Staates.</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>select</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+                <xdf:codelisteReferenz>
+                  <xdf:identifikation>
+                    <xdf:id>C60000016</xdf:id>
+                  </xdf:identifikation>
+                  <xdf:genericodeIdentification>
+                    <xdf:canonicalIdentification>urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat
+                    </xdf:canonicalIdentification>
+                    <xdf:version>2020-05-11</xdf:version>
+                    <xdf:canonicalVersionUri>urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat_2020-05-11
+                    </xdf:canonicalVersionUri>
+                  </xdf:genericodeIdentification>
+                </xdf:codelisteReferenz>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+        </xdf:datenfeldgruppe>
+      </xdf:enthaelt>
+    </xdf:struktur>
+    <xdf:struktur>
+      <xdf:anzahl>1:1</xdf:anzahl>
+      <xdf:bezug></xdf:bezug>
+      <xdf:enthaelt>
+        <xdf:datenfeldgruppe>
+          <xdf:identifikation>
+            <xdf:id>G05000493</xdf:id>
+            <xdf:version>1.0</xdf:version>
+          </xdf:identifikation>
+          <xdf:name>Angaben (Parkausweis Bewohner)</xdf:name>
+          <xdf:bezeichnungEingabe>Angaben zur Antragsstellung</xdf:bezeichnungEingabe>
+          <xdf:bezeichnungAusgabe>Angaben zur Antragsstellung</xdf:bezeichnungAusgabe>
+          <xdf:beschreibung></xdf:beschreibung>
+          <xdf:definition></xdf:definition>
+          <xdf:bezug></xdf:bezug>
+          <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+            <code>aktiv</code>
+          </xdf:status>
+          <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+          <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart" listVersionID="1.0">
+            <code>RNG</code>
+          </xdf:schemaelementart>
+          <xdf:hilfetextEingabe></xdf:hilfetextEingabe>
+          <xdf:hilfetextAusgabe></xdf:hilfetextAusgabe>
+          <xdf:regel>
+            <xdf:identifikation>
+              <xdf:id>R05000334</xdf:id>
+              <xdf:version>1.0</xdf:version>
+            </xdf:identifikation>
+            <xdf:name>Verlängerung</xdf:name>
+            <xdf:bezeichnungEingabe></xdf:bezeichnungEingabe>
+            <xdf:beschreibung></xdf:beschreibung>
+            <xdf:definition>Wenn bei F05001347 "02 eine Erneuerung einer bereits erteilten Genehmigung (Verlängerung)."
+              angegeben wird, dann wird G05000599 eine Pflichtangabe.
+            </xdf:definition>
+            <xdf:bezug></xdf:bezug>
+            <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+              <code>aktiv</code>
+            </xdf:status>
+            <xdf:fachlicherErsteller>Nancy_Bernhardt</xdf:fachlicherErsteller>
+            <xdf:script>function script() {&#xD;
+              &#xD;
+              }
+            </xdf:script>
+          </xdf:regel>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001064</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Parkausweis Gültigkeitsdauer</xdf:name>
+                <xdf:bezeichnungEingabe>Gültigkeitsdauer</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Gültigkeitsdauer</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie an, für welchen Zeitraum Sie den Parkausweis beantragen.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Angabe der Gültigkeitsdauer</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>select</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+                <xdf:codelisteReferenz>
+                  <xdf:identifikation>
+                    <xdf:id>C05000108</xdf:id>
+                  </xdf:identifikation>
+                  <xdf:genericodeIdentification>
+                    <xdf:canonicalIdentification>Parkgenehmigung (Dauer)</xdf:canonicalIdentification>
+                    <xdf:version>0.1</xdf:version>
+                    <xdf:canonicalVersionUri>Parkgenehmigung (Dauer)_0.1</xdf:canonicalVersionUri>
+                  </xdf:genericodeIdentification>
+                </xdf:codelisteReferenz>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001347</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Art des Antrags (Bewohnerparkausweis)</xdf:name>
+                <xdf:bezeichnungEingabe>Art des Antrags</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Art des Antrags</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy_Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Bei dem beantragten Bewohnerparkausweis handelt es sich um:</xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Angabe über die Art der Genehmigung</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>select</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+                <xdf:codelisteReferenz>
+                  <xdf:identifikation>
+                    <xdf:id>C05000125</xdf:id>
+                  </xdf:identifikation>
+                  <xdf:genericodeIdentification>
+                    <xdf:canonicalIdentification>Art des Antrags (kurz)</xdf:canonicalIdentification>
+                    <xdf:version>0.1</xdf:version>
+                    <xdf:canonicalVersionUri>Art des Antrags (kurz)_0.1</xdf:canonicalVersionUri>
+                  </xdf:genericodeIdentification>
+                </xdf:codelisteReferenz>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>0:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeldgruppe>
+                <xdf:identifikation>
+                  <xdf:id>G05000599</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Angaben zur bestehendem Bewohnerparkausweis</xdf:name>
+                <xdf:bezeichnungEingabe>Angaben zur bestehenden Parkgenehmigung</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Angaben zur bestehenden Parkgenehmigung</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy_Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe></xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe></xdf:hilfetextAusgabe>
+                <xdf:struktur>
+                  <xdf:anzahl>1:1</xdf:anzahl>
+                  <xdf:bezug></xdf:bezug>
+                  <xdf:enthaelt>
+                    <xdf:datenfeld>
+                      <xdf:identifikation>
+                        <xdf:id>F05001346</xdf:id>
+                        <xdf:version>1.0</xdf:version>
+                      </xdf:identifikation>
+                      <xdf:name>Parkausweisnummer</xdf:name>
+                      <xdf:bezeichnungEingabe>Parkausweisnummer</xdf:bezeichnungEingabe>
+                      <xdf:bezeichnungAusgabe>Parkausweisnummer</xdf:bezeichnungAusgabe>
+                      <xdf:beschreibung></xdf:beschreibung>
+                      <xdf:definition></xdf:definition>
+                      <xdf:bezug></xdf:bezug>
+                      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                        <code>aktiv</code>
+                      </xdf:status>
+                      <xdf:fachlicherErsteller>Nancy_Bernhardt</xdf:fachlicherErsteller>
+                      <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                            listVersionID="1.0">
+                        <code>RNG</code>
+                      </xdf:schemaelementart>
+                      <xdf:hilfetextEingabe>Geben Sie die Nummer Ihres bestehenden Parkausweises an.
+                      </xdf:hilfetextEingabe>
+                      <xdf:hilfetextAusgabe>Nummer des bestehenden Parkausweises</xdf:hilfetextAusgabe>
+                      <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                        <code>input</code>
+                      </xdf:feldart>
+                      <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                        <code>num</code>
+                      </xdf:datentyp>
+                      <xdf:praezisierung></xdf:praezisierung>
+                      <xdf:inhalt></xdf:inhalt>
+                    </xdf:datenfeld>
+                  </xdf:enthaelt>
+                </xdf:struktur>
+                <xdf:struktur>
+                  <xdf:anzahl>1:1</xdf:anzahl>
+                  <xdf:bezug></xdf:bezug>
+                  <xdf:enthaelt>
+                    <xdf:datenfeld>
+                      <xdf:identifikation>
+                        <xdf:id>F05001345</xdf:id>
+                        <xdf:version>1.0</xdf:version>
+                      </xdf:identifikation>
+                      <xdf:name>Ausstelldatum (Bewohnerparkausweis)</xdf:name>
+                      <xdf:bezeichnungEingabe>Ausstelldatum</xdf:bezeichnungEingabe>
+                      <xdf:bezeichnungAusgabe>Ausstelldatum</xdf:bezeichnungAusgabe>
+                      <xdf:beschreibung></xdf:beschreibung>
+                      <xdf:definition></xdf:definition>
+                      <xdf:bezug></xdf:bezug>
+                      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                        <code>aktiv</code>
+                      </xdf:status>
+                      <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+                      <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                            listVersionID="1.0">
+                        <code>RNG</code>
+                      </xdf:schemaelementart>
+                      <xdf:hilfetextEingabe>Geben Sie das Ausstelldatum Ihres bestehenden Bewohnerparkausweises an.
+                      </xdf:hilfetextEingabe>
+                      <xdf:hilfetextAusgabe>Ausstelldatum des Bewohnerparkausweises</xdf:hilfetextAusgabe>
+                      <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                        <code>input</code>
+                      </xdf:feldart>
+                      <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                        <code>date</code>
+                      </xdf:datentyp>
+                      <xdf:praezisierung></xdf:praezisierung>
+                      <xdf:inhalt></xdf:inhalt>
+                    </xdf:datenfeld>
+                  </xdf:enthaelt>
+                </xdf:struktur>
+              </xdf:datenfeldgruppe>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>0:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001348</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Startdatum</xdf:name>
+                <xdf:bezeichnungEingabe>Startdatum</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Startdatum</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy_Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie an, ab wann der Bewohnerparkausweis gelten soll. &#xD;
+                  Wenn Sie keine Startzeitpunkt auswählen, wird der Ausweis zum nächstmöglichen Zeitpunkt aktiviert.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Angabe zum Startdatum</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>date</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+        </xdf:datenfeldgruppe>
+      </xdf:enthaelt>
+    </xdf:struktur>
+    <xdf:struktur>
+      <xdf:anzahl>1:1</xdf:anzahl>
+      <xdf:bezug></xdf:bezug>
+      <xdf:enthaelt>
+        <xdf:datenfeldgruppe>
+          <xdf:identifikation>
+            <xdf:id>G05000477</xdf:id>
+            <xdf:version>1.0</xdf:version>
+          </xdf:identifikation>
+          <xdf:name>Angaben zum Fahrzeug (Parkausweis)</xdf:name>
+          <xdf:bezeichnungEingabe>Angaben zum Fahrzeug</xdf:bezeichnungEingabe>
+          <xdf:bezeichnungAusgabe>Angaben zum Fahrzeug</xdf:bezeichnungAusgabe>
+          <xdf:beschreibung></xdf:beschreibung>
+          <xdf:definition></xdf:definition>
+          <xdf:bezug></xdf:bezug>
+          <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+            <code>aktiv</code>
+          </xdf:status>
+          <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+          <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart" listVersionID="1.0">
+            <code>RNG</code>
+          </xdf:schemaelementart>
+          <xdf:hilfetextEingabe></xdf:hilfetextEingabe>
+          <xdf:hilfetextAusgabe></xdf:hilfetextAusgabe>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05000627</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Angabe des KFZ-Kennzeichens</xdf:name>
+                <xdf:bezeichnungEingabe>Angabe des KFZ-Kennzeichens</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Angabe des KFZ-Kennzeichens</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Lena Scheffel</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Bei deutschen Kennzeichen z.B.: "AB-CD-1234"</xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe></xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001062</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Identifikation des Fahrzeugs (kurz)</xdf:name>
+                <xdf:bezeichnungEingabe>Fahrzeug-Identifizierungsnummer</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Fahrzeug-Identifizierungsnummer</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie die letzte 6 Stellen der Fahrzeug-Identifizierungsnummer an. &#xD;
+                  &#xD;
+                  Die Fahrzeug-Identifizierungsnummer steht in den Kfz-Papieren, im Fahrzeugschein
+                  (Zulassungsbescheinigung Teil I) und im Fahrzeugbrief (Zulassungsbescheinigung Teil II).
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Angabe der Fahrzeug-Identifizierungsnummer</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>num</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001047</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Angaben zur Halterin / zum Halter</xdf:name>
+                <xdf:bezeichnungEingabe>Angaben zur Halterin, zum Halter des Fahrzeugs</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Angaben zur Halterin, zum Halter des Fahrzeugs</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie an, auf wen das Fahrzeug zugelassen ist. &#xD;
+                  &#xD;
+                  &#xD;
+                  Sollten das Fahrzeug auf einen anderen Halter zugelassen sein, geben Sie in der Folge die Daten des
+                  Halters an.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Angabe auf wen das Fahrzeug zugelassen ist. &#xD;
+                </xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>select</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+                <xdf:codelisteReferenz>
+                  <xdf:identifikation>
+                    <xdf:id>C05000103</xdf:id>
+                  </xdf:identifikation>
+                  <xdf:genericodeIdentification>
+                    <xdf:canonicalIdentification>Halterdaten</xdf:canonicalIdentification>
+                    <xdf:version>0.1</xdf:version>
+                    <xdf:canonicalVersionUri>Halterdaten_0.1</xdf:canonicalVersionUri>
+                  </xdf:genericodeIdentification>
+                </xdf:codelisteReferenz>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+        </xdf:datenfeldgruppe>
+      </xdf:enthaelt>
+    </xdf:struktur>
+    <xdf:struktur>
+      <xdf:anzahl>0:1</xdf:anzahl>
+      <xdf:bezug></xdf:bezug>
+      <xdf:enthaelt>
+        <xdf:datenfeldgruppe>
+          <xdf:identifikation>
+            <xdf:id>G05000499</xdf:id>
+            <xdf:version>1.0</xdf:version>
+          </xdf:identifikation>
+          <xdf:name>Angaben zur Fahrzeughalterin, zum Fahrzeughalter</xdf:name>
+          <xdf:bezeichnungEingabe>Angaben zur Fahrzeughalterin, zum Fahrzeughalter</xdf:bezeichnungEingabe>
+          <xdf:bezeichnungAusgabe>Angaben zur Fahrzeughalterin, zum Fahrzeughalter</xdf:bezeichnungAusgabe>
+          <xdf:beschreibung></xdf:beschreibung>
+          <xdf:definition></xdf:definition>
+          <xdf:bezug></xdf:bezug>
+          <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+            <code>aktiv</code>
+          </xdf:status>
+          <xdf:fachlicherErsteller>Nancy_Bernhardt</xdf:fachlicherErsteller>
+          <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart" listVersionID="1.0">
+            <code>RNG</code>
+          </xdf:schemaelementart>
+          <xdf:hilfetextEingabe></xdf:hilfetextEingabe>
+          <xdf:hilfetextAusgabe></xdf:hilfetextAusgabe>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001243</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Familienname</xdf:name>
+                <xdf:bezeichnungEingabe>Familienname</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Familienname</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung>Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 120</xdf:beschreibung>
+                <xdf:definition>Familienname</xdf:definition>
+                <xdf:bezug>XÖV-Kernkoponente.NameNatuerlichePerson.familienname</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>MKFFI NRW</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie bitte Ihren Familiennamen an.</xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Familienname</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung>{"minLength":"1","maxLength":"120"}</xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001244</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Vorname</xdf:name>
+                <xdf:bezeichnungEingabe>Vorname</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Vorname</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition>Vorname einer natürlichen Person.</xdf:definition>
+                <xdf:bezug>XÖV-Kernkoponente.NameNatuerlichePerson.vorname</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>MKFFI</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie bitte Ihre Vornamen an. Es empfiehlt sich die Vornamen genau so
+                  anzugeben, wie sie auf den offiziellen Ausweisdokumenten, z. B. Personalausweis angegeben sind.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Dieses Feld enthält einen Vornamen.</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung>{"minLength":"1","maxLength":"80"}</xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001245</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Straße</xdf:name>
+                <xdf:bezeichnungEingabe>Straße</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Straße</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung>Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 50. XInneres 7 ist die
+                  Feldlänge &lt;= 55 Zeichen.
+                </xdf:beschreibung>
+                <xdf:definition>Es ist die Bezeichnung der Straße anzugeben.</xdf:definition>
+                <xdf:bezug>Xinneres 7 Meldeanschrift.Strasse</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie die Bezeichnung der Straße ohne Angabe der Hausnummer oder weiterer
+                  Zusätze an.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Dieses Feld enthält die Bezeichnung der Straße.&#xD;
+                </xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung>{"minLength":"1","maxLength":"55"}</xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001246</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Hausnummer</xdf:name>
+                <xdf:bezeichnungEingabe>Hausnummer</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Hausnummer</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung>Die Modellierung aus XInneres wurde nicht 1:1 übernommen, um die Komplexität für die
+                  Ausfüllenden nicht zu hoch zu setzen. Es wurde darauf verzichtet für das Ende von Hausnummernbereichen
+                  eigene Felder zu modellieren. Daher ist die Feldlänge hier heraufgesetzt und eine entsprechende
+                  Beschreibung wurde eingefügt.Die Feldlänge setzt sich aus der maximalen Feldlänge zweier Hausnummer
+                  jeweils 4) und 1 Zeichen (-) zusammen.
+                </xdf:beschreibung>
+                <xdf:definition>Es sind nur die Ziffern einer Hausnummer anzugeben. Eine Hausnummer dient der genauen
+                  Lokalisierung eines Grundstücks, Gebäudes oder Gebäudeteils (Eingang) in einer Strasse. Geben Sie
+                  Hausnummernbereiche immer nach folgendem Beispiel ohne Leerzeichen an: 12-14
+                </xdf:definition>
+                <xdf:bezug>Xinneres.Meldeanschrift.Hausnummer</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie nur die Ziffern der Hausnummer der Anschrift an (z.B. 124). Die Straße
+                  und Hausnummerzusätze (z.B.: A bei 124A) sind getrennt anzugeben.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Dieses Feld enthält nur die Ziffern der Hausnummer der Anschrift.
+                </xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung>{"minLength":"1","maxLength":"9"}</xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001247</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Hausnummerzusatz</xdf:name>
+                <xdf:bezeichnungEingabe>Hausnummerzusatz</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Hausnummerzusatz</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition>Es sind Buchstaben oder Zusatzziffern zur Hausnummer anzugeben. Beispiel: 124 A, 109.5
+                </xdf:definition>
+                <xdf:bezug>Xinneres7 Meldeanschrift.HausnummerBuchstabeZusatzziffer</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie Buchstaben oder Zusatzziffern zur Hausnummer an (z.B.: a bei 124a).
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Dieses Feld enthält Buchstaben oder Zusatzziffern zur Hausnummer.
+                </xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung>{"minLength":"1","pattern":"[\\p{L}0-9. ]*","maxLength":"2"}</xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeldgruppe>
+                <xdf:identifikation>
+                  <xdf:id>G05000554</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Ort Inland (ohne Ortsteil)</xdf:name>
+                <xdf:bezeichnungEingabe>Angaben zum Ort</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Angaben zum Ort</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition>Ort Inland (ohne Ortsteil)</xdf:definition>
+                <xdf:bezug>XÖV-Kernkomponente.Anschrift</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Angaben zum Ort</xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Angaben zum Ort</xdf:hilfetextAusgabe>
+                <xdf:struktur>
+                  <xdf:anzahl>1:1</xdf:anzahl>
+                  <xdf:bezug></xdf:bezug>
+                  <xdf:enthaelt>
+                    <xdf:datenfeld>
+                      <xdf:identifikation>
+                        <xdf:id>F00000054</xdf:id>
+                        <xdf:version>1.2</xdf:version>
+                      </xdf:identifikation>
+                      <xdf:name>Postleitzahl</xdf:name>
+                      <xdf:bezeichnungEingabe>Postleitzahl</xdf:bezeichnungEingabe>
+                      <xdf:bezeichnungAusgabe>Postleitzahl</xdf:bezeichnungAusgabe>
+                      <xdf:beschreibung></xdf:beschreibung>
+                      <xdf:definition>Es ist die Postleitzahl anzugeben.&#xD;
+                        &#xD;
+                        Der Typ dieses Elements ist eine Einschränkung des Basistyps String.Latin.
+                      </xdf:definition>
+                      <xdf:bezug>Xinneres.Meldeanschrift.Postleitzahl</xdf:bezug>
+                      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                        <code>aktiv</code>
+                      </xdf:status>
+                      <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                      <xdf:versionshinweis>Ausgabebezeichnung hinzugefügt</xdf:versionshinweis>
+                      <xdf:veroeffentlichungsdatum>2020-03-12</xdf:veroeffentlichungsdatum>
+                      <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                            listVersionID="1.0">
+                        <code>HAR</code>
+                      </xdf:schemaelementart>
+                      <xdf:hilfetextEingabe>Geben Sie die Postleitzahl des Ortes an (z.B.: 10115).
+                      </xdf:hilfetextEingabe>
+                      <xdf:hilfetextAusgabe>Dieses Feld enthält die Postleitzahl/Kennzahl des Ortes.
+                      </xdf:hilfetextAusgabe>
+                      <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                        <code>input</code>
+                      </xdf:feldart>
+                      <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                        <code>text</code>
+                      </xdf:datentyp>
+                      <xdf:praezisierung>
+                        {"minLength":"5","pattern":"([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}","maxLength":"5"}
+                      </xdf:praezisierung>
+                      <xdf:inhalt></xdf:inhalt>
+                    </xdf:datenfeld>
+                  </xdf:enthaelt>
+                </xdf:struktur>
+                <xdf:struktur>
+                  <xdf:anzahl>1:1</xdf:anzahl>
+                  <xdf:bezug></xdf:bezug>
+                  <xdf:enthaelt>
+                    <xdf:datenfeld>
+                      <xdf:identifikation>
+                        <xdf:id>F00000035</xdf:id>
+                        <xdf:version>1.2</xdf:version>
+                      </xdf:identifikation>
+                      <xdf:name>Ort</xdf:name>
+                      <xdf:bezeichnungEingabe>Ort</xdf:bezeichnungEingabe>
+                      <xdf:bezeichnungAusgabe>Ort</xdf:bezeichnungAusgabe>
+                      <xdf:beschreibung>Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 44. Laut PAuswV 2*25
+                        = 50 Zeichen. Laut XInneres 7 Meldeanschrift.Wohnort 40 Zeichen.
+                      </xdf:beschreibung>
+                      <xdf:definition>Der "Ort" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt).
+                      </xdf:definition>
+                      <xdf:bezug>PAuswG vom 21.6.2019, §5, Abs. 2 (Anschrift); PAuswV vom 28.9.2017, Anhang 3 (Wohnort);
+                        BSI TR-03123, Version 1.5.1; XInneres 7, Meldeanschrift.Wohnort;
+                        XÖV-Kernkomponente.Anschrift.ort
+                      </xdf:bezug>
+                      <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                        <code>aktiv</code>
+                      </xdf:status>
+                      <xdf:fachlicherErsteller>Bundesredaktion</xdf:fachlicherErsteller>
+                      <xdf:versionshinweis>Strukturelementart geändert. Ausgabebezeichnung eingefügt.
+                      </xdf:versionshinweis>
+                      <xdf:veroeffentlichungsdatum>2020-03-12</xdf:veroeffentlichungsdatum>
+                      <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                            listVersionID="1.0">
+                        <code>HAR</code>
+                      </xdf:schemaelementart>
+                      <xdf:hilfetextEingabe>Geben Sie den Ort an.</xdf:hilfetextEingabe>
+                      <xdf:hilfetextAusgabe>Dieses Feld enthält den Ort.</xdf:hilfetextAusgabe>
+                      <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                        <code>input</code>
+                      </xdf:feldart>
+                      <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                        <code>text</code>
+                      </xdf:datentyp>
+                      <xdf:praezisierung>{"minLength":"1","maxLength":"50"}</xdf:praezisierung>
+                      <xdf:inhalt></xdf:inhalt>
+                    </xdf:datenfeld>
+                  </xdf:enthaelt>
+                </xdf:struktur>
+              </xdf:datenfeldgruppe>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001249</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Land</xdf:name>
+                <xdf:bezeichnungEingabe>Land</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Land</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung>Verwendete Codeliste: Staat 2020-05-11</xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug>XMeld.type.AnschriftMelderecht.Ausland.staat Version 2.4.4; &#xD;
+                  Codeliste laut Xmeld und DSMeld: Codeliste Destatis Staat
+                  (urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat)
+                </xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>OFA-Labor</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie den Namen des Landes bzw. des Staates an, Beispiel Deutschland.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Dieses Feld enthält den Namen des Landes/ Staates.</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>select</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+                <xdf:codelisteReferenz>
+                  <xdf:identifikation>
+                    <xdf:id>C60000016</xdf:id>
+                  </xdf:identifikation>
+                  <xdf:genericodeIdentification>
+                    <xdf:canonicalIdentification>urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat
+                    </xdf:canonicalIdentification>
+                    <xdf:version>2020-05-11</xdf:version>
+                    <xdf:canonicalVersionUri>urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat_2020-05-11
+                    </xdf:canonicalVersionUri>
+                  </xdf:genericodeIdentification>
+                </xdf:codelisteReferenz>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001355</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>E-Mail</xdf:name>
+                <xdf:bezeichnungEingabe>E-Mail-Adresse</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>E-Mail-Adresse</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition>Elektronische Adresse zum Empfangen von digitalen Nachrichten (E-Mails). Bsp:
+                  MaxMustermann@email.de
+                </xdf:definition>
+                <xdf:bezug>RFC 5322; RFC 5321</xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Geben Sie bitte Ihre E-Mail-Adresse ein. Beispiel: MaxMustermann@email.de
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>E-Mail-Adresse</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>text</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001248</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Nutzungsüberlassung</xdf:name>
+                <xdf:bezeichnungEingabe>Nutzungsüberlassung</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Nutzungsüberlassung</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Laden Sie eine Nutzungsüberlassungserklärung hoch (Dateigröße max. 2 MB).
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Nutzungsüberlassung</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>file</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+          <xdf:struktur>
+            <xdf:anzahl>1:1</xdf:anzahl>
+            <xdf:bezug></xdf:bezug>
+            <xdf:enthaelt>
+              <xdf:datenfeld>
+                <xdf:identifikation>
+                  <xdf:id>F05001045</xdf:id>
+                  <xdf:version>1.0</xdf:version>
+                </xdf:identifikation>
+                <xdf:name>Zulassungsbescheinigung Teil I (Fahrzeugschein)</xdf:name>
+                <xdf:bezeichnungEingabe>Zulassungsbescheinigung Teil I (Fahrzeugschein)</xdf:bezeichnungEingabe>
+                <xdf:bezeichnungAusgabe>Zulassungsbescheinigung Teil I (Fahrzeugschein)</xdf:bezeichnungAusgabe>
+                <xdf:beschreibung></xdf:beschreibung>
+                <xdf:definition></xdf:definition>
+                <xdf:bezug></xdf:bezug>
+                <xdf:status listURI="urn:xoev-de:fim:codeliste:xdatenfelder.status" listVersionID="1.0">
+                  <code>aktiv</code>
+                </xdf:status>
+                <xdf:fachlicherErsteller>Nancy_Bernhardt</xdf:fachlicherErsteller>
+                <xdf:schemaelementart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart"
+                                      listVersionID="1.0">
+                  <code>RNG</code>
+                </xdf:schemaelementart>
+                <xdf:hilfetextEingabe>Laden Sie eine Kopie der Zulassungsbescheinigung Teil I (Fahrzeugschein) des
+                  Fahrzeuges hoch, für den der Parkausweis gelten soll.
+                </xdf:hilfetextEingabe>
+                <xdf:hilfetextAusgabe>Anlage Zulassungsbescheinigung Teil I (Fahrzeugschein)</xdf:hilfetextAusgabe>
+                <xdf:feldart listURI="urn:xoev-de:fim:codeliste:xdatenfelder.feldart" listVersionID="1.0">
+                  <code>input</code>
+                </xdf:feldart>
+                <xdf:datentyp listURI="urn:xoev-de:fim:codeliste:xdatenfelder.datentyp" listVersionID="1.0">
+                  <code>file</code>
+                </xdf:datentyp>
+                <xdf:praezisierung></xdf:praezisierung>
+                <xdf:inhalt></xdf:inhalt>
+              </xdf:datenfeld>
+            </xdf:enthaelt>
+          </xdf:struktur>
+        </xdf:datenfeldgruppe>
+      </xdf:enthaelt>
+    </xdf:struktur>
+  </xdf:stammdatenschema>
+</xdf:xdatenfelder.stammdatenschema.0102>

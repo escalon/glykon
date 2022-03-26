@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdf="urn:xoev-de:fim:standard:xdatenfelder_2" targetNamespace="urn:xoev-de:fim:standard:xdatenfelder_2" version="2.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:annotation>
+    <xs:appinfo>
+      <standard>
+        <nameLang>XDatenfelder</nameLang>
+        <nameKurz>XDatenfelder</nameKurz>
+        <nameTechnisch>xdatenfelder</nameTechnisch>
+        <kennung>urn:xoev-de:fim:standard:xdatenfelder</kennung>
+        <beschreibung>XDatenfelder</beschreibung>
+      </standard>
+      <versionStandard>
+        <version>2.0</version>
+        <versionXOEVHandbuch>2.1.0</versionXOEVHandbuch>
+        <versionXGenerator>2.6.1</versionXGenerator>
+        <versionModellierungswerkzeug>18.5</versionModellierungswerkzeug>
+        <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+      </versionStandard>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:include schemaLocation="xdatenfelder-baukasten.xsd" />
+  <xs:element name="xdatenfelder.dokumentsteckbrief.0101">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Dokumentsteckbrief übertragen</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="dokumentensteckbrief" type="xdf:Dokumentsteckbrief">
+              <xs:annotation>
+                <xs:documentation>Der Dokumentsteckbrief.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="xdatenfelder.stammdatenschema.0102">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>Beispielrechtsgrundlage</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Stammdatenschema übertragen</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="stammdatenschema" type="xdf:Stammdatenschema">
+              <xs:annotation>
+                <xs:documentation>Das Stammdatenschema.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="xdatenfelder.datenfeldgruppe.0103">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Datenfeldgruppe übertragen</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="datenfeldgruppe" type="xdf:Datenfeldgruppe">
+              <xs:annotation>
+                <xs:documentation>Die Datenfeldgruppe.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="xdatenfelder.datenfeld.0104">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Datenfeld übertragen</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="datenfeld" type="xdf:Datenfeld">
+              <xs:annotation>
+                <xs:documentation>Das Datenfeld.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="xdatenfelder.codeliste.0105">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Codeliste übertragen</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="codeliste" type="xdf:Codeliste">
+              <xs:annotation>
+                <xs:documentation>Die Codeliste.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

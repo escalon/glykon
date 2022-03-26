@@ -1,0 +1,14 @@
+{
+  "name": "glykon",
+  "version": "1.0.0",
+  "description": "Modelliert OZG Referenzdatenfelder mit Maskeninformationen als Basis für Formulargenerierung",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsonix": "^3.0.0"
+  }
+}
