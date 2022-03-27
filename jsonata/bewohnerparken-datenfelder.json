@@ -1,0 +1,2300 @@
+{
+  "TYPE_NAME": "xdf.XdatenfelderStammdatenschema0102",
+  "header": {
+    "TYPE_NAME": "xdf.Header",
+    "nachrichtID": "79118DBD6E4BC61A",
+    "erstellungszeitpunkt": {
+      "year": 2022,
+      "month": 3,
+      "day": 20,
+      "hour": 13,
+      "minute": 31,
+      "second": 49,
+      "fractionalSecond": 0.174163,
+      "timezone": 0,
+      "date": "2022-03-20T13:31:49.174Z"
+    }
+  },
+  "stammdatenschema": {
+    "TYPE_NAME": "xdf.Stammdatenschema",
+    "identifikation": {
+      "TYPE_NAME": "xdf.ElementIdentifikation",
+      "id": "S05000058",
+      "version": "1.0"
+    },
+    "name": "Antrag auf Erteilung / Verlängerung Bewohnerparkausweis",
+    "bezeichnungEingabe": "Antrag auf Erteilung / Verlängerung Bewohnerparkausweis",
+    "beschreibung": "Der vorliegende Dokumentenstreckbrief / das vorliegende Stammdatenschema wurde mit Bezug auf\r\n      folgende(n) LeiKa-ID(s) erstellt: Bewohnerparkausweis Erteilung(99108001001000) + Bewohnerparkausweis\r\n      Verlängerung(99108001020000).\r\n    ",
+    "definition": "Bürger können für Ihr Kraftfahrzeug bei der zuständigen Straßenverkehrsbehörde oder zuständigen\r\n      Gemeinde einen Bewohnerparkausweis beantragen. Der Bewohnerparkausweis gilt nur für ausgewiesene Zonen.\r\r\n      Einen Anspruch auf Erteilung hat, wer in diesen Bereichen gemeldet ist und dort tatsächlich wohnt. Je Bewohner\r\n      kann nur ein Parkausweis erteilt werden, für ein auf ihn zugelassenes oder dauerhaft genutztes Kraftfahrzeug.\r\n      Gemeinden können eine Erteilung von bestimmten Voraussetzungen abhängig machen (bspw. dem Hauptwohnsitz).\r\n    ",
+    "bezug": "Als Rechtsgrundlage dient die Straßenverkehrsordnung § 45 Absatz 1b Nummer 2 Straßenverkehrs-Ordnung\r\n      (StVO), § 46 Absatz 1 Nummer 11 Straßenverkehrs-Ordnung (StVO) und § 45 der Allgemeine Verwaltungsvorschrift\r\r\n      zur Straßenverkehrs-Ordnung (VwV-StVO). Unter welchen Voraussetzungen Städte und Gemeinden gesonderte\r\n      Parkgenehmigungen erteilen, ist bei der zuständigen Straßenverkehrsbehörde entsprechenden und jeweiligen\r\n      Verwaltungen zu erfragen. \r\r\n      \r\r\n    ",
+    "status": {
+      "TYPE_NAME": "xdf.CodeStatus",
+      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+      "listVersionID": "1.0",
+      "code": "aktiv"
+    },
+    "fachlicherErsteller": "Nancy Bernhardt",
+    "freigabedatum": {
+      "year": 2021,
+      "month": 10,
+      "day": 20,
+      "hour": null,
+      "minute": null,
+      "second": null,
+      "fractionalSecond": null,
+      "timezone": null,
+      "date": "2021-10-20T00:00:00.000Z"
+    },
+    "veroeffentlichungsdatum": {
+      "year": 2021,
+      "month": 5,
+      "day": 5,
+      "hour": null,
+      "minute": null,
+      "second": null,
+      "fractionalSecond": null,
+      "timezone": null,
+      "date": "2021-05-05T00:00:00.000Z"
+    },
+    "ableitungsmodifikationenStruktur": {
+      "TYPE_NAME": "xdf.CodeAbleitungsmodifikationenStruktur",
+      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.ableitungsmodifikationenStruktur",
+      "listVersionID": "1.0",
+      "code": "3"
+    },
+    "ableitungsmodifikationenRepraesentation": {
+      "TYPE_NAME": "xdf.CodeAbleitungsmodifikationenRepraesentation",
+      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.ableitungsmodifikationenRepraesentation",
+      "listVersionID": "1.0",
+      "code": "1"
+    },
+    "regel": [
+      {
+        "TYPE_NAME": "xdf.Regel",
+        "identifikation": {
+          "TYPE_NAME": "xdf.ElementIdentifikation",
+          "id": "R05000281",
+          "version": "1.0"
+        },
+        "name": "Angaben zur Fahrzeughalterin, zum Fahrzeughalter",
+        "bezeichnungEingabe": "",
+        "beschreibung": "",
+        "definition": "Wenn bei F05001047 \"02 Das Fahrzeug ist auf einen anderen Halter zugelassen.\" angegeben wird, dann\r\n        wird G05000499 zur Pflichtangabe.\r\n      ",
+        "bezug": "",
+        "status": {
+          "TYPE_NAME": "xdf.CodeStatus",
+          "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+          "listVersionID": "1.0",
+          "code": "aktiv"
+        },
+        "fachlicherErsteller": "Nancy_Bernhardt",
+        "script": "function script() {\r\r\n        \r\r\n        }\r\n      "
+      }
+    ],
+    "struktur": [
+      {
+        "TYPE_NAME": "xdf.Struktur",
+        "anzahl": "1:1",
+        "bezug": "",
+        "enthaelt": {
+          "TYPE_NAME": "xdf.Enthaelt",
+          "datenfeld": {
+            "TYPE_NAME": "xdf.Datenfeld",
+            "identifikation": {
+              "TYPE_NAME": "xdf.ElementIdentifikation",
+              "id": "F00-4cb0dd14-629c-4661-9435-4e9eadc43e07",
+              "version": "1.0"
+            },
+            "name": "Einwilligungserklärungstext Verarbeitung personenbezogener Daten",
+            "bezeichnungEingabe": "Einwilligung zur Verarbeitung personenbezogener Daten",
+            "bezeichnungAusgabe": "Datenschutzerklärung",
+            "beschreibung": "",
+            "definition": "",
+            "bezug": "Datenverarbeitung nach Art. 6 Abs. 1 lit. A DSGVO\r\r\n            \"Die Verarbeitung ist nur rechtmäßig, wenn mindestens eine der nachstehenden Bedingungen erfüllt ist:\r\r\n            Die betroffene Person hat ihre Einwilligung zu der Verarbeitung der sie betreffenden personenbezogenen Daten\r\n            für einen oder mehrere bestimmte Zwecke gegeben.\"\r\n          ",
+            "status": {
+              "TYPE_NAME": "xdf.CodeStatus",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+              "listVersionID": "1.0",
+              "code": "aktiv"
+            },
+            "fachlicherErsteller": "Lena Scheffel",
+            "schemaelementart": {
+              "TYPE_NAME": "xdf.CodeSchemaelementart",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+              "listVersionID": "1.0",
+              "code": "RNG"
+            },
+            "hilfetextEingabe": "Bitte stimmen Sie der Datenverarbeitung nach Art. 6 Abs. 1 lit. a DSGVO zu.\r\n          ",
+            "hilfetextAusgabe": "Zustimmung zur Datenverarbeitung nach Art. 6 Abs. 1 lit. a DSGVO",
+            "feldart": {
+              "TYPE_NAME": "xdf.CodeFeldart",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+              "listVersionID": "1.0",
+              "code": "select"
+            },
+            "datentyp": {
+              "TYPE_NAME": "xdf.CodeDatentyp",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+              "listVersionID": "1.0",
+              "code": "text"
+            },
+            "praezisierung": "",
+            "inhalt": "",
+            "codelisteReferenz": {
+              "TYPE_NAME": "xdf.CodelisteReferenz",
+              "identifikation": {
+                "TYPE_NAME": "xdf.ElementIdentifikation",
+                "id": "C05000073"
+              },
+              "genericodeIdentification": {
+                "TYPE_NAME": "xdf.GenericodeIdentification",
+                "canonicalIdentification": "urn:de:fim:codeliste:zustimmung",
+                "version": "2021-01-11",
+                "canonicalVersionUri": "urn:de:fim:codeliste:zustimmung_2021-01-11"
+              }
+            }
+          }
+        }
+      },
+      {
+        "TYPE_NAME": "xdf.Struktur",
+        "anzahl": "1:1",
+        "bezug": "",
+        "enthaelt": {
+          "TYPE_NAME": "xdf.Enthaelt",
+          "datenfeld": {
+            "TYPE_NAME": "xdf.Datenfeld",
+            "identifikation": {
+              "TYPE_NAME": "xdf.ElementIdentifikation",
+              "id": "F05001344",
+              "version": "1.0"
+            },
+            "name": "Einverständniserklärung Abgleich Melderegister",
+            "bezeichnungEingabe": "Einwilligung zum Abgleich mit dem Melde- und Zulassungsregister\r\n          ",
+            "bezeichnungAusgabe": "Einwilligung zum Abgleich mit dem Melde- und Zulassungsregister\r\n          ",
+            "beschreibung": "",
+            "definition": "",
+            "bezug": "",
+            "status": {
+              "TYPE_NAME": "xdf.CodeStatus",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+              "listVersionID": "1.0",
+              "code": "aktiv"
+            },
+            "fachlicherErsteller": "NancyBernhardt",
+            "schemaelementart": {
+              "TYPE_NAME": "xdf.CodeSchemaelementart",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+              "listVersionID": "1.0",
+              "code": "RNG"
+            },
+            "hilfetextEingabe": "Der Online-Antrag beinhaltet einen Abgleich mit dem Melde- und Zulassungsregister.\r\n            Sollte dieser Abgleich nicht erfolgreich durchgeführt werden können, ist eine Vorsprache zwingend\r\n            erforderlich. Bitte stimmen Sie dem Datenabgleich zu.\r\n          ",
+            "hilfetextAusgabe": "Einwilligung zum Abgleich mit dem Melde- und Zulassungsregister",
+            "feldart": {
+              "TYPE_NAME": "xdf.CodeFeldart",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+              "listVersionID": "1.0",
+              "code": "select"
+            },
+            "datentyp": {
+              "TYPE_NAME": "xdf.CodeDatentyp",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+              "listVersionID": "1.0",
+              "code": "text"
+            },
+            "praezisierung": "",
+            "inhalt": "",
+            "codelisteReferenz": {
+              "TYPE_NAME": "xdf.CodelisteReferenz",
+              "identifikation": {
+                "TYPE_NAME": "xdf.ElementIdentifikation",
+                "id": "C05000112"
+              },
+              "genericodeIdentification": {
+                "TYPE_NAME": "xdf.GenericodeIdentification",
+                "canonicalIdentification": "Bestätigung",
+                "version": "0.1",
+                "canonicalVersionUri": "Bestätigung_0.1"
+              }
+            }
+          }
+        }
+      },
+      {
+        "TYPE_NAME": "xdf.Struktur",
+        "anzahl": "1:1",
+        "bezug": "",
+        "enthaelt": {
+          "TYPE_NAME": "xdf.Enthaelt",
+          "datenfeldgruppe": {
+            "TYPE_NAME": "xdf.Datenfeldgruppe",
+            "identifikation": {
+              "TYPE_NAME": "xdf.ElementIdentifikation",
+              "id": "G05000496",
+              "version": "1.0"
+            },
+            "name": "Angaben zur antragstellenden Person",
+            "bezeichnungEingabe": "Angaben zur antragstellenden Person",
+            "bezeichnungAusgabe": "Angaben zur antragstellenden Person",
+            "beschreibung": "",
+            "definition": "Das Staatsangehörigkeitsgesetz erfordert teils spezifischere Angaben zum Antragssteller als\r\n            vergleichbare Datenfeldgruppen\r\n          ",
+            "bezug": "Staatsangehörigkeitsgesetz",
+            "status": {
+              "TYPE_NAME": "xdf.CodeStatus",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+              "listVersionID": "1.0",
+              "code": "aktiv"
+            },
+            "fachlicherErsteller": "MKFFI-NRW",
+            "schemaelementart": {
+              "TYPE_NAME": "xdf.CodeSchemaelementart",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+              "listVersionID": "1.0",
+              "code": "RNG"
+            },
+            "hilfetextEingabe": "Bitte geben Sie hier die weiteren Daten ein",
+            "hilfetextAusgabe": "Bitte geben Sie hier die weiteren Daten ein",
+            "struktur": [
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05000059",
+                      "version": "1.0"
+                    },
+                    "name": "Familienname",
+                    "bezeichnungEingabe": "Familienname",
+                    "bezeichnungAusgabe": "Familienname",
+                    "beschreibung": "Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 120",
+                    "definition": "Familienname",
+                    "bezug": "XÖV-Kernkoponente.NameNatuerlichePerson.familienname",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "MKFFI NRW",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie bitte Ihren Familiennamen an.",
+                    "hilfetextAusgabe": "Familienname",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"120\"}",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:*",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05000060",
+                      "version": "1.0"
+                    },
+                    "name": "Vorname",
+                    "bezeichnungEingabe": "Vorname",
+                    "bezeichnungAusgabe": "Vorname",
+                    "beschreibung": "",
+                    "definition": "Vorname einer natürlichen Person.",
+                    "bezug": "XÖV-Kernkoponente.NameNatuerlichePerson.vorname",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "MKFFI",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie bitte Ihre Vornamen an. Es empfiehlt sich die Vornamen genau so\r\n                  anzugeben, wie sie auf den offiziellen Ausweisdokumenten, z. B. Personalausweis angegeben sind.\r\n                ",
+                    "hilfetextAusgabe": "Dieses Feld enthält einen Vornamen.",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"80\"}",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05000351",
+                      "version": "1.0"
+                    },
+                    "name": "Geburtsdatum",
+                    "bezeichnungEingabe": "Geburtsdatum",
+                    "beschreibung": "-",
+                    "definition": "Dieses Feld beinhaltet das Geburtsdatum, also Tag, Monat und Jahr der Vollendung der\r\n                  Geburt.\r\n                ",
+                    "bezug": "XÖV-Kernkomponente.Geburt.datum",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie Tag, Monat und Jahr der Geburt an.",
+                    "hilfetextAusgabe": "Dieses Feld enthält das Geburtsdatum, also Tag, Monat und Jahr der Geburt.\r\n                ",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "date"
+                    },
+                    "praezisierung": "",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001354",
+                      "version": "1.0"
+                    },
+                    "name": "E-Mail",
+                    "bezeichnungEingabe": "E-Mail",
+                    "bezeichnungAusgabe": "E-Mail",
+                    "beschreibung": "",
+                    "definition": "E-Mail-Adresse orientiert am bestehenden harmonisierten Datenfeld: \r\r\n                  F00000071V1.5\r\n                ",
+                    "bezug": "RFC 5322; RFC 5321",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie bitte Ihre E-Mail-Adresse an.",
+                    "hilfetextAusgabe": "E-Mail-Adresse",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "0:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05000067",
+                      "version": "1.0"
+                    },
+                    "name": "Telefon",
+                    "bezeichnungEingabe": "Telefonnummer",
+                    "bezeichnungAusgabe": "Telefonnummer",
+                    "beschreibung": "Dieses Feld wurde angelehnt an ITU E.123. eine Prüfung über ein Pattern erfolgt nicht,\r\n                  um den Eingebenden nicht zu überfordern.\r\n                ",
+                    "definition": "Das Feld entspricht dem harmonisierten Datenfeld F00000069V1.4",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "MKFFI-NRW",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie bitte bei Telefonnummern innerhalb Deutschlands zuerst die\r\n                  Ortsvorwahl/Mobilnetzvorwahl in Klammern, gefolgt von der Rufnummer an, z. B. (0211) 12345678.\r\r\n                  \r\r\n                  Geben Sie bitte bei Telefonnummern außerhalb von Deutschland zuerst den Internationalen Ländercode mit\r\n                  vorgestelltem Plus, gefolgt von der Ortsvorwahl/Mobilnetzvorwahl ohne der führenden Null, gefolgt von\r\n                  der Rufnummer an, z.B. +49 211 123456789.\r\n                ",
+                    "hilfetextAusgabe": "Telefonnummer mit Vorwahl und gegebenenfalls Ländervorwahl.",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"23\"}",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "0:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05000068",
+                      "version": "1.0"
+                    },
+                    "name": "Handynummer",
+                    "bezeichnungEingabe": "Handynummer",
+                    "bezeichnungAusgabe": "Handynummer",
+                    "beschreibung": "",
+                    "definition": "Handynummer",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "MKFFI.NRW",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie bitte Ihre Handynummer an. Innerhalb Deutschlands zuerst die\r\n                  Mobilnetzvorwahl in Klammern, gefolgt von der Rufnummer an, z. B. (0171) 123456789.\r\r\n                  \r\r\n                  Geben Sie bitte bei Handynummern außerhalb von Deutschland zuerst den Internationalen Ländercode mit\r\n                  vorgestelltem Plus, gefolgt von der Mobilnetzvorwahl ohne der führenden Null, gefolgt von der\r\n                  Rufnummer an, z. B. +49 171 123456789.\r\n                ",
+                    "hilfetextAusgabe": "Handynummer",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "{\"minLength\":\"6\",\"maxLength\":\"20\"}",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeldgruppe": {
+                    "TYPE_NAME": "xdf.Datenfeldgruppe",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "G05000428",
+                      "version": "1.0"
+                    },
+                    "name": "Straßenangaben",
+                    "bezeichnungEingabe": "Straßenangaben",
+                    "bezeichnungAusgabe": "Straßenangaben",
+                    "beschreibung": "Zu beachten: wird die Anschrift im Kontext der Online-Ausweisfunktion des neuen\r\n                  Personalausweis verwendet, können Straße und Hausnummer nur in einem Datenfeld gemeinsam ausgelesen\r\n                  werden (siehe auch QUELLE ERGÄNZEN). Bei der Umsetzung müssen somit Straße und Hausnummer in einem\r\n                  Feld zusammengefasst werden. Der Hausnummerzusatz ist ebenfalls Bestandteil dieses Kombifeldes.\r\n                ",
+                    "definition": "Diese Feldgruppe enthält Angaben zur Straße der Anschrift. Die Bezeichnung sowie ggf.\r\n                  Zusatzinformationen zu der Straße.\r\n                ",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "KoSIT",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Diese Feldgruppe enthält Angaben zur Straße der Anschrift. Die Bezeichnung sowie\r\n                  ggf. Zusatzinformationen zu der Straße.\r\n                ",
+                    "hilfetextAusgabe": "Diese Feldgruppe enthält Angaben zur Straße der Anschrift. Die Bezeichnung sowie\r\n                  ggf. Zusatzinformationen zu der Straße.\r\n                ",
+                    "struktur": [
+                      {
+                        "TYPE_NAME": "xdf.Struktur",
+                        "anzahl": "1:1",
+                        "bezug": "",
+                        "enthaelt": {
+                          "TYPE_NAME": "xdf.Enthaelt",
+                          "datenfeld": {
+                            "TYPE_NAME": "xdf.Datenfeld",
+                            "identifikation": {
+                              "TYPE_NAME": "xdf.ElementIdentifikation",
+                              "id": "F00000053",
+                              "version": "1.1"
+                            },
+                            "name": "Straße",
+                            "bezeichnungEingabe": "Straße",
+                            "bezeichnungAusgabe": "Straße",
+                            "beschreibung": "Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 50. XInneres 7 ist\r\n                        die Feldlänge <= 55 Zeichen.\r\n                      ",
+                            "definition": "Es ist die Bezeichnung der Straße anzugeben.",
+                            "bezug": "Xinneres 7 Meldeanschrift.Strasse",
+                            "status": {
+                              "TYPE_NAME": "xdf.CodeStatus",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                              "listVersionID": "1.0",
+                              "code": "aktiv"
+                            },
+                            "fachlicherErsteller": "Bundesredaktion",
+                            "versionshinweis": "Ausgabebezeichnung hinzugefügt",
+                            "veroeffentlichungsdatum": {
+                              "year": 2020,
+                              "month": 3,
+                              "day": 12,
+                              "hour": null,
+                              "minute": null,
+                              "second": null,
+                              "fractionalSecond": null,
+                              "timezone": null,
+                              "date": "2020-03-12T00:00:00.000Z"
+                            },
+                            "schemaelementart": {
+                              "TYPE_NAME": "xdf.CodeSchemaelementart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                              "listVersionID": "1.0",
+                              "code": "HAR"
+                            },
+                            "hilfetextEingabe": "Geben Sie die Bezeichnung der Straße ohne Angabe der Hausnummer oder\r\n                        weiterer Zusätze an.\r\n                      ",
+                            "hilfetextAusgabe": "Dieses Feld enthält die Bezeichnung der Straße.\r\r\n                      ",
+                            "feldart": {
+                              "TYPE_NAME": "xdf.CodeFeldart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                              "listVersionID": "1.0",
+                              "code": "input"
+                            },
+                            "datentyp": {
+                              "TYPE_NAME": "xdf.CodeDatentyp",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                              "listVersionID": "1.0",
+                              "code": "text"
+                            },
+                            "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"55\"}",
+                            "inhalt": ""
+                          }
+                        }
+                      },
+                      {
+                        "TYPE_NAME": "xdf.Struktur",
+                        "anzahl": "1:1",
+                        "bezug": "",
+                        "enthaelt": {
+                          "TYPE_NAME": "xdf.Enthaelt",
+                          "datenfeld": {
+                            "TYPE_NAME": "xdf.Datenfeld",
+                            "identifikation": {
+                              "TYPE_NAME": "xdf.ElementIdentifikation",
+                              "id": "F00000016",
+                              "version": "1.2"
+                            },
+                            "name": "Hausnummer",
+                            "bezeichnungEingabe": "Hausnummer",
+                            "bezeichnungAusgabe": "Hausnummer",
+                            "beschreibung": "Die Modellierung aus XInneres wurde nicht 1:1 übernommen, um die Komplexität für\r\n                        die Ausfüllenden nicht zu hoch zu setzen. Es wurde darauf verzichtet für das Ende von\r\n                        Hausnummernbereichen eigene Felder zu modellieren. Daher ist die Feldlänge hier heraufgesetzt\r\n                        und eine entsprechende Beschreibung wurde eingefügt.Die Feldlänge setzt sich aus der maximalen\r\n                        Feldlänge zweier Hausnummer jeweils 4) und 1 Zeichen (-) zusammen.\r\n                      ",
+                            "definition": "Es sind nur die Ziffern einer Hausnummer anzugeben. Eine Hausnummer dient der\r\n                        genauen Lokalisierung eines Grundstücks, Gebäudes oder Gebäudeteils (Eingang) in einer Strasse.\r\n                        Geben Sie Hausnummernbereiche immer nach folgendem Beispiel ohne Leerzeichen an: 12-14\r\n                      ",
+                            "bezug": "Xinneres.Meldeanschrift.Hausnummer",
+                            "status": {
+                              "TYPE_NAME": "xdf.CodeStatus",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                              "listVersionID": "1.0",
+                              "code": "aktiv"
+                            },
+                            "fachlicherErsteller": "Bundesredaktion",
+                            "versionshinweis": "Beschreibung hinzugefügt.",
+                            "veroeffentlichungsdatum": {
+                              "year": 2020,
+                              "month": 3,
+                              "day": 12,
+                              "hour": null,
+                              "minute": null,
+                              "second": null,
+                              "fractionalSecond": null,
+                              "timezone": null,
+                              "date": "2020-03-12T00:00:00.000Z"
+                            },
+                            "schemaelementart": {
+                              "TYPE_NAME": "xdf.CodeSchemaelementart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                              "listVersionID": "1.0",
+                              "code": "HAR"
+                            },
+                            "hilfetextEingabe": "Geben Sie nur die Ziffern der Hausnummer der Anschrift an (z.B. 124). Die\r\n                        Straße und Hausnummerzusätze (z.B.: A bei 124A) sind getrennt anzugeben.\r\n                      ",
+                            "hilfetextAusgabe": "Dieses Feld enthält nur die Ziffern der Hausnummer der Anschrift.\r\n                      ",
+                            "feldart": {
+                              "TYPE_NAME": "xdf.CodeFeldart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                              "listVersionID": "1.0",
+                              "code": "input"
+                            },
+                            "datentyp": {
+                              "TYPE_NAME": "xdf.CodeDatentyp",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                              "listVersionID": "1.0",
+                              "code": "text"
+                            },
+                            "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"9\"}",
+                            "inhalt": ""
+                          }
+                        }
+                      },
+                      {
+                        "TYPE_NAME": "xdf.Struktur",
+                        "anzahl": "0:1",
+                        "bezug": "",
+                        "enthaelt": {
+                          "TYPE_NAME": "xdf.Enthaelt",
+                          "datenfeld": {
+                            "TYPE_NAME": "xdf.Datenfeld",
+                            "identifikation": {
+                              "TYPE_NAME": "xdf.ElementIdentifikation",
+                              "id": "F00000084",
+                              "version": "1.1"
+                            },
+                            "name": "Hausnummerzusatz",
+                            "bezeichnungEingabe": "Hausnummerzusatz",
+                            "bezeichnungAusgabe": "Hausnummerzusatz",
+                            "beschreibung": "",
+                            "definition": "Es sind Buchstaben oder Zusatzziffern zur Hausnummer anzugeben. Beispiel: 124 A,\r\n                        109.5\r\n                      ",
+                            "bezug": "Xinneres7 Meldeanschrift.HausnummerBuchstabeZusatzziffer",
+                            "status": {
+                              "TYPE_NAME": "xdf.CodeStatus",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                              "listVersionID": "1.0",
+                              "code": "aktiv"
+                            },
+                            "fachlicherErsteller": "Bundesredaktion",
+                            "versionshinweis": "Ausgabebezeichnung hinzugefügt",
+                            "veroeffentlichungsdatum": {
+                              "year": 2020,
+                              "month": 3,
+                              "day": 12,
+                              "hour": null,
+                              "minute": null,
+                              "second": null,
+                              "fractionalSecond": null,
+                              "timezone": null,
+                              "date": "2020-03-12T00:00:00.000Z"
+                            },
+                            "schemaelementart": {
+                              "TYPE_NAME": "xdf.CodeSchemaelementart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                              "listVersionID": "1.0",
+                              "code": "HAR"
+                            },
+                            "hilfetextEingabe": "Geben Sie Buchstaben oder Zusatzziffern zur Hausnummer an (z.B.: a bei\r\n                        124a).\r\n                      ",
+                            "hilfetextAusgabe": "Dieses Feld enthält Buchstaben oder Zusatzziffern zur Hausnummer.\r\n                      ",
+                            "feldart": {
+                              "TYPE_NAME": "xdf.CodeFeldart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                              "listVersionID": "1.0",
+                              "code": "input"
+                            },
+                            "datentyp": {
+                              "TYPE_NAME": "xdf.CodeDatentyp",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                              "listVersionID": "1.0",
+                              "code": "text"
+                            },
+                            "praezisierung": "{\"minLength\":\"1\",\"pattern\":\"[\\\\p{L}0-9. ]*\",\"maxLength\":\"2\"}\r\n                      ",
+                            "inhalt": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeldgruppe": {
+                    "TYPE_NAME": "xdf.Datenfeldgruppe",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "G00000113",
+                      "version": "1.2"
+                    },
+                    "name": "Ort Inland (ohne Ortsteil)",
+                    "bezeichnungEingabe": "Angaben zum Ort",
+                    "bezeichnungAusgabe": "Angaben zum Ort",
+                    "beschreibung": "",
+                    "definition": "Ort Inland (ohne Ortsteil)",
+                    "bezug": "XÖV-Kernkomponente.Anschrift",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Bundesredaktion",
+                    "versionshinweis": "aktuelle Datenfelder eingefügt",
+                    "veroeffentlichungsdatum": {
+                      "year": 2020,
+                      "month": 3,
+                      "day": 12,
+                      "hour": null,
+                      "minute": null,
+                      "second": null,
+                      "fractionalSecond": null,
+                      "timezone": null,
+                      "date": "2020-03-12T00:00:00.000Z"
+                    },
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "HAR"
+                    },
+                    "hilfetextEingabe": "Angaben zum Ort",
+                    "hilfetextAusgabe": "Angaben zum Ort",
+                    "struktur": [
+                      {
+                        "TYPE_NAME": "xdf.Struktur",
+                        "anzahl": "1:1",
+                        "bezug": "\r\r\n                  ",
+                        "enthaelt": {
+                          "TYPE_NAME": "xdf.Enthaelt",
+                          "datenfeld": {
+                            "TYPE_NAME": "xdf.Datenfeld",
+                            "identifikation": {
+                              "TYPE_NAME": "xdf.ElementIdentifikation",
+                              "id": "F00000054",
+                              "version": "1.2"
+                            },
+                            "name": "Postleitzahl",
+                            "bezeichnungEingabe": "Postleitzahl",
+                            "bezeichnungAusgabe": "Postleitzahl",
+                            "beschreibung": "",
+                            "definition": "Es ist die Postleitzahl anzugeben.\r\r\n                        \r\r\n                        Der Typ dieses Elements ist eine Einschränkung des Basistyps String.Latin.\r\n                      ",
+                            "bezug": "Xinneres.Meldeanschrift.Postleitzahl",
+                            "status": {
+                              "TYPE_NAME": "xdf.CodeStatus",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                              "listVersionID": "1.0",
+                              "code": "aktiv"
+                            },
+                            "fachlicherErsteller": "Bundesredaktion",
+                            "versionshinweis": "Ausgabebezeichnung hinzugefügt",
+                            "veroeffentlichungsdatum": {
+                              "year": 2020,
+                              "month": 3,
+                              "day": 12,
+                              "hour": null,
+                              "minute": null,
+                              "second": null,
+                              "fractionalSecond": null,
+                              "timezone": null,
+                              "date": "2020-03-12T00:00:00.000Z"
+                            },
+                            "schemaelementart": {
+                              "TYPE_NAME": "xdf.CodeSchemaelementart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                              "listVersionID": "1.0",
+                              "code": "HAR"
+                            },
+                            "hilfetextEingabe": "Geben Sie die Postleitzahl des Ortes an (z.B.: 10115).\r\n                      ",
+                            "hilfetextAusgabe": "Dieses Feld enthält die Postleitzahl/Kennzahl des Ortes.\r\n                      ",
+                            "feldart": {
+                              "TYPE_NAME": "xdf.CodeFeldart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                              "listVersionID": "1.0",
+                              "code": "input"
+                            },
+                            "datentyp": {
+                              "TYPE_NAME": "xdf.CodeDatentyp",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                              "listVersionID": "1.0",
+                              "code": "text"
+                            },
+                            "praezisierung": "\r\n                        {\"minLength\":\"5\",\"pattern\":\"([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}\",\"maxLength\":\"5\"}\r\n                      ",
+                            "inhalt": ""
+                          }
+                        }
+                      },
+                      {
+                        "TYPE_NAME": "xdf.Struktur",
+                        "anzahl": "1:1",
+                        "bezug": "\r\r\n                  ",
+                        "enthaelt": {
+                          "TYPE_NAME": "xdf.Enthaelt",
+                          "datenfeld": {
+                            "TYPE_NAME": "xdf.Datenfeld",
+                            "identifikation": {
+                              "TYPE_NAME": "xdf.ElementIdentifikation",
+                              "id": "F00000035",
+                              "version": "1.2"
+                            },
+                            "name": "Ort",
+                            "bezeichnungEingabe": "Ort",
+                            "bezeichnungAusgabe": "Ort",
+                            "beschreibung": "Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 44. Laut PAuswV 2*25\r\n                        = 50 Zeichen. Laut XInneres 7 Meldeanschrift.Wohnort 40 Zeichen.\r\n                      ",
+                            "definition": "Der \"Ort\" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt).\r\n                      ",
+                            "bezug": "PAuswG vom 21.6.2019, §5, Abs. 2 (Anschrift); PAuswV vom 28.9.2017, Anhang 3 (Wohnort);\r\n                        BSI TR-03123, Version 1.5.1; XInneres 7, Meldeanschrift.Wohnort;\r\n                        XÖV-Kernkomponente.Anschrift.ort\r\n                      ",
+                            "status": {
+                              "TYPE_NAME": "xdf.CodeStatus",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                              "listVersionID": "1.0",
+                              "code": "aktiv"
+                            },
+                            "fachlicherErsteller": "Bundesredaktion",
+                            "versionshinweis": "Strukturelementart geändert. Ausgabebezeichnung eingefügt.\r\n                      ",
+                            "veroeffentlichungsdatum": {
+                              "year": 2020,
+                              "month": 3,
+                              "day": 12,
+                              "hour": null,
+                              "minute": null,
+                              "second": null,
+                              "fractionalSecond": null,
+                              "timezone": null,
+                              "date": "2020-03-12T00:00:00.000Z"
+                            },
+                            "schemaelementart": {
+                              "TYPE_NAME": "xdf.CodeSchemaelementart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                              "listVersionID": "1.0",
+                              "code": "HAR"
+                            },
+                            "hilfetextEingabe": "Geben Sie den Ort an.",
+                            "hilfetextAusgabe": "Dieses Feld enthält den Ort.",
+                            "feldart": {
+                              "TYPE_NAME": "xdf.CodeFeldart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                              "listVersionID": "1.0",
+                              "code": "input"
+                            },
+                            "datentyp": {
+                              "TYPE_NAME": "xdf.CodeDatentyp",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                              "listVersionID": "1.0",
+                              "code": "text"
+                            },
+                            "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"50\"}",
+                            "inhalt": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05000523",
+                      "version": "1.0"
+                    },
+                    "name": "Land",
+                    "bezeichnungEingabe": "Land",
+                    "bezeichnungAusgabe": "Land",
+                    "beschreibung": "Verwendete Codeliste: Staat 2020-05-11",
+                    "definition": "",
+                    "bezug": "XMeld.type.AnschriftMelderecht.Ausland.staat Version 2.4.4; \r\r\n                  Codeliste laut Xmeld und DSMeld: Codeliste Destatis Staat\r\n                  (urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat)\r\n                ",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "OFA-Labor",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie den Namen des Landes bzw. des Staates an, Beispiel Deutschland.\r\n                ",
+                    "hilfetextAusgabe": "Dieses Feld enthält den Namen des Landes/ Staates.",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "select"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "",
+                    "inhalt": "",
+                    "codelisteReferenz": {
+                      "TYPE_NAME": "xdf.CodelisteReferenz",
+                      "identifikation": {
+                        "TYPE_NAME": "xdf.ElementIdentifikation",
+                        "id": "C60000016"
+                      },
+                      "genericodeIdentification": {
+                        "TYPE_NAME": "xdf.GenericodeIdentification",
+                        "canonicalIdentification": "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat\r\n                    ",
+                        "version": "2020-05-11",
+                        "canonicalVersionUri": "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat_2020-05-11\r\n                    "
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "TYPE_NAME": "xdf.Struktur",
+        "anzahl": "1:1",
+        "bezug": "",
+        "enthaelt": {
+          "TYPE_NAME": "xdf.Enthaelt",
+          "datenfeldgruppe": {
+            "TYPE_NAME": "xdf.Datenfeldgruppe",
+            "identifikation": {
+              "TYPE_NAME": "xdf.ElementIdentifikation",
+              "id": "G05000493",
+              "version": "1.0"
+            },
+            "name": "Angaben (Parkausweis Bewohner)",
+            "bezeichnungEingabe": "Angaben zur Antragsstellung",
+            "bezeichnungAusgabe": "Angaben zur Antragsstellung",
+            "beschreibung": "",
+            "definition": "",
+            "bezug": "",
+            "status": {
+              "TYPE_NAME": "xdf.CodeStatus",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+              "listVersionID": "1.0",
+              "code": "aktiv"
+            },
+            "fachlicherErsteller": "Nancy Bernhardt",
+            "schemaelementart": {
+              "TYPE_NAME": "xdf.CodeSchemaelementart",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+              "listVersionID": "1.0",
+              "code": "RNG"
+            },
+            "hilfetextEingabe": "",
+            "hilfetextAusgabe": "",
+            "regel": [
+              {
+                "TYPE_NAME": "xdf.Regel",
+                "identifikation": {
+                  "TYPE_NAME": "xdf.ElementIdentifikation",
+                  "id": "R05000334",
+                  "version": "1.0"
+                },
+                "name": "Verlängerung",
+                "bezeichnungEingabe": "",
+                "beschreibung": "",
+                "definition": "Wenn bei F05001347 \"02 eine Erneuerung einer bereits erteilten Genehmigung (Verlängerung).\"\r\n              angegeben wird, dann wird G05000599 eine Pflichtangabe.\r\n            ",
+                "bezug": "",
+                "status": {
+                  "TYPE_NAME": "xdf.CodeStatus",
+                  "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                  "listVersionID": "1.0",
+                  "code": "aktiv"
+                },
+                "fachlicherErsteller": "Nancy_Bernhardt",
+                "script": "function script() {\r\r\n              \r\r\n              }\r\n            "
+              }
+            ],
+            "struktur": [
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001064",
+                      "version": "1.0"
+                    },
+                    "name": "Parkausweis Gültigkeitsdauer",
+                    "bezeichnungEingabe": "Gültigkeitsdauer",
+                    "bezeichnungAusgabe": "Gültigkeitsdauer",
+                    "beschreibung": "",
+                    "definition": "",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie an, für welchen Zeitraum Sie den Parkausweis beantragen.\r\n                ",
+                    "hilfetextAusgabe": "Angabe der Gültigkeitsdauer",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "select"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "",
+                    "inhalt": "",
+                    "codelisteReferenz": {
+                      "TYPE_NAME": "xdf.CodelisteReferenz",
+                      "identifikation": {
+                        "TYPE_NAME": "xdf.ElementIdentifikation",
+                        "id": "C05000108"
+                      },
+                      "genericodeIdentification": {
+                        "TYPE_NAME": "xdf.GenericodeIdentification",
+                        "canonicalIdentification": "Parkgenehmigung (Dauer)",
+                        "version": "0.1",
+                        "canonicalVersionUri": "Parkgenehmigung (Dauer)_0.1"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001347",
+                      "version": "1.0"
+                    },
+                    "name": "Art des Antrags (Bewohnerparkausweis)",
+                    "bezeichnungEingabe": "Art des Antrags",
+                    "bezeichnungAusgabe": "Art des Antrags",
+                    "beschreibung": "",
+                    "definition": "",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy_Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Bei dem beantragten Bewohnerparkausweis handelt es sich um:",
+                    "hilfetextAusgabe": "Angabe über die Art der Genehmigung",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "select"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "",
+                    "inhalt": "",
+                    "codelisteReferenz": {
+                      "TYPE_NAME": "xdf.CodelisteReferenz",
+                      "identifikation": {
+                        "TYPE_NAME": "xdf.ElementIdentifikation",
+                        "id": "C05000125"
+                      },
+                      "genericodeIdentification": {
+                        "TYPE_NAME": "xdf.GenericodeIdentification",
+                        "canonicalIdentification": "Art des Antrags (kurz)",
+                        "version": "0.1",
+                        "canonicalVersionUri": "Art des Antrags (kurz)_0.1"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "0:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeldgruppe": {
+                    "TYPE_NAME": "xdf.Datenfeldgruppe",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "G05000599",
+                      "version": "1.0"
+                    },
+                    "name": "Angaben zur bestehendem Bewohnerparkausweis",
+                    "bezeichnungEingabe": "Angaben zur bestehenden Parkgenehmigung",
+                    "bezeichnungAusgabe": "Angaben zur bestehenden Parkgenehmigung",
+                    "beschreibung": "",
+                    "definition": "",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy_Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "",
+                    "hilfetextAusgabe": "",
+                    "struktur": [
+                      {
+                        "TYPE_NAME": "xdf.Struktur",
+                        "anzahl": "1:1",
+                        "bezug": "",
+                        "enthaelt": {
+                          "TYPE_NAME": "xdf.Enthaelt",
+                          "datenfeld": {
+                            "TYPE_NAME": "xdf.Datenfeld",
+                            "identifikation": {
+                              "TYPE_NAME": "xdf.ElementIdentifikation",
+                              "id": "F05001346",
+                              "version": "1.0"
+                            },
+                            "name": "Parkausweisnummer",
+                            "bezeichnungEingabe": "Parkausweisnummer",
+                            "bezeichnungAusgabe": "Parkausweisnummer",
+                            "beschreibung": "",
+                            "definition": "",
+                            "bezug": "",
+                            "status": {
+                              "TYPE_NAME": "xdf.CodeStatus",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                              "listVersionID": "1.0",
+                              "code": "aktiv"
+                            },
+                            "fachlicherErsteller": "Nancy_Bernhardt",
+                            "schemaelementart": {
+                              "TYPE_NAME": "xdf.CodeSchemaelementart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                              "listVersionID": "1.0",
+                              "code": "RNG"
+                            },
+                            "hilfetextEingabe": "Geben Sie die Nummer Ihres bestehenden Parkausweises an.\r\n                      ",
+                            "hilfetextAusgabe": "Nummer des bestehenden Parkausweises",
+                            "feldart": {
+                              "TYPE_NAME": "xdf.CodeFeldart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                              "listVersionID": "1.0",
+                              "code": "input"
+                            },
+                            "datentyp": {
+                              "TYPE_NAME": "xdf.CodeDatentyp",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                              "listVersionID": "1.0",
+                              "code": "num"
+                            },
+                            "praezisierung": "",
+                            "inhalt": ""
+                          }
+                        }
+                      },
+                      {
+                        "TYPE_NAME": "xdf.Struktur",
+                        "anzahl": "1:1",
+                        "bezug": "",
+                        "enthaelt": {
+                          "TYPE_NAME": "xdf.Enthaelt",
+                          "datenfeld": {
+                            "TYPE_NAME": "xdf.Datenfeld",
+                            "identifikation": {
+                              "TYPE_NAME": "xdf.ElementIdentifikation",
+                              "id": "F05001345",
+                              "version": "1.0"
+                            },
+                            "name": "Ausstelldatum (Bewohnerparkausweis)",
+                            "bezeichnungEingabe": "Ausstelldatum",
+                            "bezeichnungAusgabe": "Ausstelldatum",
+                            "beschreibung": "",
+                            "definition": "",
+                            "bezug": "",
+                            "status": {
+                              "TYPE_NAME": "xdf.CodeStatus",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                              "listVersionID": "1.0",
+                              "code": "aktiv"
+                            },
+                            "fachlicherErsteller": "Nancy Bernhardt",
+                            "schemaelementart": {
+                              "TYPE_NAME": "xdf.CodeSchemaelementart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                              "listVersionID": "1.0",
+                              "code": "RNG"
+                            },
+                            "hilfetextEingabe": "Geben Sie das Ausstelldatum Ihres bestehenden Bewohnerparkausweises an.\r\n                      ",
+                            "hilfetextAusgabe": "Ausstelldatum des Bewohnerparkausweises",
+                            "feldart": {
+                              "TYPE_NAME": "xdf.CodeFeldart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                              "listVersionID": "1.0",
+                              "code": "input"
+                            },
+                            "datentyp": {
+                              "TYPE_NAME": "xdf.CodeDatentyp",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                              "listVersionID": "1.0",
+                              "code": "date"
+                            },
+                            "praezisierung": "",
+                            "inhalt": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "0:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001348",
+                      "version": "1.0"
+                    },
+                    "name": "Startdatum",
+                    "bezeichnungEingabe": "Startdatum",
+                    "bezeichnungAusgabe": "Startdatum",
+                    "beschreibung": "",
+                    "definition": "",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy_Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie an, ab wann der Bewohnerparkausweis gelten soll. \r\r\n                  Wenn Sie keine Startzeitpunkt auswählen, wird der Ausweis zum nächstmöglichen Zeitpunkt aktiviert.\r\n                ",
+                    "hilfetextAusgabe": "Angabe zum Startdatum",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "date"
+                    },
+                    "praezisierung": "",
+                    "inhalt": ""
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "TYPE_NAME": "xdf.Struktur",
+        "anzahl": "1:1",
+        "bezug": "",
+        "enthaelt": {
+          "TYPE_NAME": "xdf.Enthaelt",
+          "datenfeldgruppe": {
+            "TYPE_NAME": "xdf.Datenfeldgruppe",
+            "identifikation": {
+              "TYPE_NAME": "xdf.ElementIdentifikation",
+              "id": "G05000477",
+              "version": "1.0"
+            },
+            "name": "Angaben zum Fahrzeug (Parkausweis)",
+            "bezeichnungEingabe": "Angaben zum Fahrzeug",
+            "bezeichnungAusgabe": "Angaben zum Fahrzeug",
+            "beschreibung": "",
+            "definition": "",
+            "bezug": "",
+            "status": {
+              "TYPE_NAME": "xdf.CodeStatus",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+              "listVersionID": "1.0",
+              "code": "aktiv"
+            },
+            "fachlicherErsteller": "Nancy Bernhardt",
+            "schemaelementart": {
+              "TYPE_NAME": "xdf.CodeSchemaelementart",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+              "listVersionID": "1.0",
+              "code": "RNG"
+            },
+            "hilfetextEingabe": "",
+            "hilfetextAusgabe": "",
+            "struktur": [
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05000627",
+                      "version": "1.0"
+                    },
+                    "name": "Angabe des KFZ-Kennzeichens",
+                    "bezeichnungEingabe": "Angabe des KFZ-Kennzeichens",
+                    "bezeichnungAusgabe": "Angabe des KFZ-Kennzeichens",
+                    "beschreibung": "",
+                    "definition": "",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Lena Scheffel",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Bei deutschen Kennzeichen z.B.: \"AB-CD-1234\"",
+                    "hilfetextAusgabe": "",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001062",
+                      "version": "1.0"
+                    },
+                    "name": "Identifikation des Fahrzeugs (kurz)",
+                    "bezeichnungEingabe": "Fahrzeug-Identifizierungsnummer",
+                    "bezeichnungAusgabe": "Fahrzeug-Identifizierungsnummer",
+                    "beschreibung": "",
+                    "definition": "",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie die letzte 6 Stellen der Fahrzeug-Identifizierungsnummer an. \r\r\n                  \r\r\n                  Die Fahrzeug-Identifizierungsnummer steht in den Kfz-Papieren, im Fahrzeugschein\r\n                  (Zulassungsbescheinigung Teil I) und im Fahrzeugbrief (Zulassungsbescheinigung Teil II).\r\n                ",
+                    "hilfetextAusgabe": "Angabe der Fahrzeug-Identifizierungsnummer",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "num"
+                    },
+                    "praezisierung": "",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001047",
+                      "version": "1.0"
+                    },
+                    "name": "Angaben zur Halterin / zum Halter",
+                    "bezeichnungEingabe": "Angaben zur Halterin, zum Halter des Fahrzeugs",
+                    "bezeichnungAusgabe": "Angaben zur Halterin, zum Halter des Fahrzeugs",
+                    "beschreibung": "",
+                    "definition": "",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie an, auf wen das Fahrzeug zugelassen ist. \r\r\n                  \r\r\n                  \r\r\n                  Sollten das Fahrzeug auf einen anderen Halter zugelassen sein, geben Sie in der Folge die Daten des\r\n                  Halters an.\r\n                ",
+                    "hilfetextAusgabe": "Angabe auf wen das Fahrzeug zugelassen ist. \r\r\n                ",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "select"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "",
+                    "inhalt": "",
+                    "codelisteReferenz": {
+                      "TYPE_NAME": "xdf.CodelisteReferenz",
+                      "identifikation": {
+                        "TYPE_NAME": "xdf.ElementIdentifikation",
+                        "id": "C05000103"
+                      },
+                      "genericodeIdentification": {
+                        "TYPE_NAME": "xdf.GenericodeIdentification",
+                        "canonicalIdentification": "Halterdaten",
+                        "version": "0.1",
+                        "canonicalVersionUri": "Halterdaten_0.1"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "TYPE_NAME": "xdf.Struktur",
+        "anzahl": "0:1",
+        "bezug": "",
+        "enthaelt": {
+          "TYPE_NAME": "xdf.Enthaelt",
+          "datenfeldgruppe": {
+            "TYPE_NAME": "xdf.Datenfeldgruppe",
+            "identifikation": {
+              "TYPE_NAME": "xdf.ElementIdentifikation",
+              "id": "G05000499",
+              "version": "1.0"
+            },
+            "name": "Angaben zur Fahrzeughalterin, zum Fahrzeughalter",
+            "bezeichnungEingabe": "Angaben zur Fahrzeughalterin, zum Fahrzeughalter",
+            "bezeichnungAusgabe": "Angaben zur Fahrzeughalterin, zum Fahrzeughalter",
+            "beschreibung": "",
+            "definition": "",
+            "bezug": "",
+            "status": {
+              "TYPE_NAME": "xdf.CodeStatus",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+              "listVersionID": "1.0",
+              "code": "aktiv"
+            },
+            "fachlicherErsteller": "Nancy_Bernhardt",
+            "schemaelementart": {
+              "TYPE_NAME": "xdf.CodeSchemaelementart",
+              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+              "listVersionID": "1.0",
+              "code": "RNG"
+            },
+            "hilfetextEingabe": "",
+            "hilfetextAusgabe": "",
+            "struktur": [
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001243",
+                      "version": "1.0"
+                    },
+                    "name": "Familienname",
+                    "bezeichnungEingabe": "Familienname",
+                    "bezeichnungAusgabe": "Familienname",
+                    "beschreibung": "Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 120",
+                    "definition": "Familienname",
+                    "bezug": "XÖV-Kernkoponente.NameNatuerlichePerson.familienname",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "MKFFI NRW",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie bitte Ihren Familiennamen an.",
+                    "hilfetextAusgabe": "Familienname",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"120\"}",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001244",
+                      "version": "1.0"
+                    },
+                    "name": "Vorname",
+                    "bezeichnungEingabe": "Vorname",
+                    "bezeichnungAusgabe": "Vorname",
+                    "beschreibung": "",
+                    "definition": "Vorname einer natürlichen Person.",
+                    "bezug": "XÖV-Kernkoponente.NameNatuerlichePerson.vorname",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "MKFFI",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie bitte Ihre Vornamen an. Es empfiehlt sich die Vornamen genau so\r\n                  anzugeben, wie sie auf den offiziellen Ausweisdokumenten, z. B. Personalausweis angegeben sind.\r\n                ",
+                    "hilfetextAusgabe": "Dieses Feld enthält einen Vornamen.",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"80\"}",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001245",
+                      "version": "1.0"
+                    },
+                    "name": "Straße",
+                    "bezeichnungEingabe": "Straße",
+                    "bezeichnungAusgabe": "Straße",
+                    "beschreibung": "Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 50. XInneres 7 ist die\r\n                  Feldlänge <= 55 Zeichen.\r\n                ",
+                    "definition": "Es ist die Bezeichnung der Straße anzugeben.",
+                    "bezug": "Xinneres 7 Meldeanschrift.Strasse",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Bundesredaktion",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie die Bezeichnung der Straße ohne Angabe der Hausnummer oder weiterer\r\n                  Zusätze an.\r\n                ",
+                    "hilfetextAusgabe": "Dieses Feld enthält die Bezeichnung der Straße.\r\r\n                ",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"55\"}",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001246",
+                      "version": "1.0"
+                    },
+                    "name": "Hausnummer",
+                    "bezeichnungEingabe": "Hausnummer",
+                    "bezeichnungAusgabe": "Hausnummer",
+                    "beschreibung": "Die Modellierung aus XInneres wurde nicht 1:1 übernommen, um die Komplexität für die\r\n                  Ausfüllenden nicht zu hoch zu setzen. Es wurde darauf verzichtet für das Ende von Hausnummernbereichen\r\n                  eigene Felder zu modellieren. Daher ist die Feldlänge hier heraufgesetzt und eine entsprechende\r\n                  Beschreibung wurde eingefügt.Die Feldlänge setzt sich aus der maximalen Feldlänge zweier Hausnummer\r\n                  jeweils 4) und 1 Zeichen (-) zusammen.\r\n                ",
+                    "definition": "Es sind nur die Ziffern einer Hausnummer anzugeben. Eine Hausnummer dient der genauen\r\n                  Lokalisierung eines Grundstücks, Gebäudes oder Gebäudeteils (Eingang) in einer Strasse. Geben Sie\r\n                  Hausnummernbereiche immer nach folgendem Beispiel ohne Leerzeichen an: 12-14\r\n                ",
+                    "bezug": "Xinneres.Meldeanschrift.Hausnummer",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Bundesredaktion",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie nur die Ziffern der Hausnummer der Anschrift an (z.B. 124). Die Straße\r\n                  und Hausnummerzusätze (z.B.: A bei 124A) sind getrennt anzugeben.\r\n                ",
+                    "hilfetextAusgabe": "Dieses Feld enthält nur die Ziffern der Hausnummer der Anschrift.\r\n                ",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"9\"}",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001247",
+                      "version": "1.0"
+                    },
+                    "name": "Hausnummerzusatz",
+                    "bezeichnungEingabe": "Hausnummerzusatz",
+                    "bezeichnungAusgabe": "Hausnummerzusatz",
+                    "beschreibung": "",
+                    "definition": "Es sind Buchstaben oder Zusatzziffern zur Hausnummer anzugeben. Beispiel: 124 A, 109.5\r\n                ",
+                    "bezug": "Xinneres7 Meldeanschrift.HausnummerBuchstabeZusatzziffer",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Bundesredaktion",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie Buchstaben oder Zusatzziffern zur Hausnummer an (z.B.: a bei 124a).\r\n                ",
+                    "hilfetextAusgabe": "Dieses Feld enthält Buchstaben oder Zusatzziffern zur Hausnummer.\r\n                ",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "{\"minLength\":\"1\",\"pattern\":\"[\\\\p{L}0-9. ]*\",\"maxLength\":\"2\"}",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeldgruppe": {
+                    "TYPE_NAME": "xdf.Datenfeldgruppe",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "G05000554",
+                      "version": "1.0"
+                    },
+                    "name": "Ort Inland (ohne Ortsteil)",
+                    "bezeichnungEingabe": "Angaben zum Ort",
+                    "bezeichnungAusgabe": "Angaben zum Ort",
+                    "beschreibung": "",
+                    "definition": "Ort Inland (ohne Ortsteil)",
+                    "bezug": "XÖV-Kernkomponente.Anschrift",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Bundesredaktion",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Angaben zum Ort",
+                    "hilfetextAusgabe": "Angaben zum Ort",
+                    "struktur": [
+                      {
+                        "TYPE_NAME": "xdf.Struktur",
+                        "anzahl": "1:1",
+                        "bezug": "",
+                        "enthaelt": {
+                          "TYPE_NAME": "xdf.Enthaelt",
+                          "datenfeld": {
+                            "TYPE_NAME": "xdf.Datenfeld",
+                            "identifikation": {
+                              "TYPE_NAME": "xdf.ElementIdentifikation",
+                              "id": "F00000054",
+                              "version": "1.2"
+                            },
+                            "name": "Postleitzahl",
+                            "bezeichnungEingabe": "Postleitzahl",
+                            "bezeichnungAusgabe": "Postleitzahl",
+                            "beschreibung": "",
+                            "definition": "Es ist die Postleitzahl anzugeben.\r\r\n                        \r\r\n                        Der Typ dieses Elements ist eine Einschränkung des Basistyps String.Latin.\r\n                      ",
+                            "bezug": "Xinneres.Meldeanschrift.Postleitzahl",
+                            "status": {
+                              "TYPE_NAME": "xdf.CodeStatus",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                              "listVersionID": "1.0",
+                              "code": "aktiv"
+                            },
+                            "fachlicherErsteller": "Bundesredaktion",
+                            "versionshinweis": "Ausgabebezeichnung hinzugefügt",
+                            "veroeffentlichungsdatum": {
+                              "year": 2020,
+                              "month": 3,
+                              "day": 12,
+                              "hour": null,
+                              "minute": null,
+                              "second": null,
+                              "fractionalSecond": null,
+                              "timezone": null,
+                              "date": "2020-03-12T00:00:00.000Z"
+                            },
+                            "schemaelementart": {
+                              "TYPE_NAME": "xdf.CodeSchemaelementart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                              "listVersionID": "1.0",
+                              "code": "HAR"
+                            },
+                            "hilfetextEingabe": "Geben Sie die Postleitzahl des Ortes an (z.B.: 10115).\r\n                      ",
+                            "hilfetextAusgabe": "Dieses Feld enthält die Postleitzahl/Kennzahl des Ortes.\r\n                      ",
+                            "feldart": {
+                              "TYPE_NAME": "xdf.CodeFeldart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                              "listVersionID": "1.0",
+                              "code": "input"
+                            },
+                            "datentyp": {
+                              "TYPE_NAME": "xdf.CodeDatentyp",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                              "listVersionID": "1.0",
+                              "code": "text"
+                            },
+                            "praezisierung": "\r\n                        {\"minLength\":\"5\",\"pattern\":\"([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}\",\"maxLength\":\"5\"}\r\n                      ",
+                            "inhalt": ""
+                          }
+                        }
+                      },
+                      {
+                        "TYPE_NAME": "xdf.Struktur",
+                        "anzahl": "1:1",
+                        "bezug": "",
+                        "enthaelt": {
+                          "TYPE_NAME": "xdf.Enthaelt",
+                          "datenfeld": {
+                            "TYPE_NAME": "xdf.Datenfeld",
+                            "identifikation": {
+                              "TYPE_NAME": "xdf.ElementIdentifikation",
+                              "id": "F00000035",
+                              "version": "1.2"
+                            },
+                            "name": "Ort",
+                            "bezeichnungEingabe": "Ort",
+                            "bezeichnungAusgabe": "Ort",
+                            "beschreibung": "Kompatibilität zu EPA in TR XhD v 1.4 sollte Feldlänge min. 44. Laut PAuswV 2*25\r\n                        = 50 Zeichen. Laut XInneres 7 Meldeanschrift.Wohnort 40 Zeichen.\r\n                      ",
+                            "definition": "Der \"Ort\" enthält den Namen eines Ortes (Gemeinde, Ortschaft oder Stadt).\r\n                      ",
+                            "bezug": "PAuswG vom 21.6.2019, §5, Abs. 2 (Anschrift); PAuswV vom 28.9.2017, Anhang 3 (Wohnort);\r\n                        BSI TR-03123, Version 1.5.1; XInneres 7, Meldeanschrift.Wohnort;\r\n                        XÖV-Kernkomponente.Anschrift.ort\r\n                      ",
+                            "status": {
+                              "TYPE_NAME": "xdf.CodeStatus",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                              "listVersionID": "1.0",
+                              "code": "aktiv"
+                            },
+                            "fachlicherErsteller": "Bundesredaktion",
+                            "versionshinweis": "Strukturelementart geändert. Ausgabebezeichnung eingefügt.\r\n                      ",
+                            "veroeffentlichungsdatum": {
+                              "year": 2020,
+                              "month": 3,
+                              "day": 12,
+                              "hour": null,
+                              "minute": null,
+                              "second": null,
+                              "fractionalSecond": null,
+                              "timezone": null,
+                              "date": "2020-03-12T00:00:00.000Z"
+                            },
+                            "schemaelementart": {
+                              "TYPE_NAME": "xdf.CodeSchemaelementart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                              "listVersionID": "1.0",
+                              "code": "HAR"
+                            },
+                            "hilfetextEingabe": "Geben Sie den Ort an.",
+                            "hilfetextAusgabe": "Dieses Feld enthält den Ort.",
+                            "feldart": {
+                              "TYPE_NAME": "xdf.CodeFeldart",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                              "listVersionID": "1.0",
+                              "code": "input"
+                            },
+                            "datentyp": {
+                              "TYPE_NAME": "xdf.CodeDatentyp",
+                              "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                              "listVersionID": "1.0",
+                              "code": "text"
+                            },
+                            "praezisierung": "{\"minLength\":\"1\",\"maxLength\":\"50\"}",
+                            "inhalt": ""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001249",
+                      "version": "1.0"
+                    },
+                    "name": "Land",
+                    "bezeichnungEingabe": "Land",
+                    "bezeichnungAusgabe": "Land",
+                    "beschreibung": "Verwendete Codeliste: Staat 2020-05-11",
+                    "definition": "",
+                    "bezug": "XMeld.type.AnschriftMelderecht.Ausland.staat Version 2.4.4; \r\r\n                  Codeliste laut Xmeld und DSMeld: Codeliste Destatis Staat\r\n                  (urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat)\r\n                ",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "OFA-Labor",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie den Namen des Landes bzw. des Staates an, Beispiel Deutschland.\r\n                ",
+                    "hilfetextAusgabe": "Dieses Feld enthält den Namen des Landes/ Staates.",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "select"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "",
+                    "inhalt": "",
+                    "codelisteReferenz": {
+                      "TYPE_NAME": "xdf.CodelisteReferenz",
+                      "identifikation": {
+                        "TYPE_NAME": "xdf.ElementIdentifikation",
+                        "id": "C60000016"
+                      },
+                      "genericodeIdentification": {
+                        "TYPE_NAME": "xdf.GenericodeIdentification",
+                        "canonicalIdentification": "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat\r\n                    ",
+                        "version": "2020-05-11",
+                        "canonicalVersionUri": "urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:staat_2020-05-11\r\n                    "
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001355",
+                      "version": "1.0"
+                    },
+                    "name": "E-Mail",
+                    "bezeichnungEingabe": "E-Mail-Adresse",
+                    "bezeichnungAusgabe": "E-Mail-Adresse",
+                    "beschreibung": "",
+                    "definition": "Elektronische Adresse zum Empfangen von digitalen Nachrichten (E-Mails). Bsp:\r\n                  MaxMustermann@email.de\r\n                ",
+                    "bezug": "RFC 5322; RFC 5321",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Geben Sie bitte Ihre E-Mail-Adresse ein. Beispiel: MaxMustermann@email.de\r\n                ",
+                    "hilfetextAusgabe": "E-Mail-Adresse",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "text"
+                    },
+                    "praezisierung": "",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001248",
+                      "version": "1.0"
+                    },
+                    "name": "Nutzungsüberlassung",
+                    "bezeichnungEingabe": "Nutzungsüberlassung",
+                    "bezeichnungAusgabe": "Nutzungsüberlassung",
+                    "beschreibung": "",
+                    "definition": "",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Laden Sie eine Nutzungsüberlassungserklärung hoch (Dateigröße max. 2 MB).\r\n                ",
+                    "hilfetextAusgabe": "Nutzungsüberlassung",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "file"
+                    },
+                    "praezisierung": "",
+                    "inhalt": ""
+                  }
+                }
+              },
+              {
+                "TYPE_NAME": "xdf.Struktur",
+                "anzahl": "1:1",
+                "bezug": "",
+                "enthaelt": {
+                  "TYPE_NAME": "xdf.Enthaelt",
+                  "datenfeld": {
+                    "TYPE_NAME": "xdf.Datenfeld",
+                    "identifikation": {
+                      "TYPE_NAME": "xdf.ElementIdentifikation",
+                      "id": "F05001045",
+                      "version": "1.0"
+                    },
+                    "name": "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
+                    "bezeichnungEingabe": "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
+                    "bezeichnungAusgabe": "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
+                    "beschreibung": "",
+                    "definition": "",
+                    "bezug": "",
+                    "status": {
+                      "TYPE_NAME": "xdf.CodeStatus",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+                      "listVersionID": "1.0",
+                      "code": "aktiv"
+                    },
+                    "fachlicherErsteller": "Nancy_Bernhardt",
+                    "schemaelementart": {
+                      "TYPE_NAME": "xdf.CodeSchemaelementart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+                      "listVersionID": "1.0",
+                      "code": "RNG"
+                    },
+                    "hilfetextEingabe": "Laden Sie eine Kopie der Zulassungsbescheinigung Teil I (Fahrzeugschein) des\r\n                  Fahrzeuges hoch, für den der Parkausweis gelten soll.\r\n                ",
+                    "hilfetextAusgabe": "Anlage Zulassungsbescheinigung Teil I (Fahrzeugschein)",
+                    "feldart": {
+                      "TYPE_NAME": "xdf.CodeFeldart",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+                      "listVersionID": "1.0",
+                      "code": "input"
+                    },
+                    "datentyp": {
+                      "TYPE_NAME": "xdf.CodeDatentyp",
+                      "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+                      "listVersionID": "1.0",
+                      "code": "file"
+                    },
+                    "praezisierung": "",
+                    "inhalt": ""
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

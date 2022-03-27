@@ -1,0 +1,414 @@
+{
+  "id": "m40191:MyForm:v1.0.0",
+  "sections": [
+    {
+      "title": "Allgemeine Angaben",
+      "fieldGroups": [
+        {
+          "id": "top-level-group",
+          "title": "",
+          "rows": [
+            {
+              "fields": [
+                {
+                  "id": "einwilligungserklaerungstext-verarbeitung-personenbezogener-daten",
+                  "label": "Einwilligung zur Verarbeitung personenbezogener Daten",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "einverstaendniserklaerung-abgleich-melderegister",
+                  "label": "Einwilligung zum Abgleich mit dem Melde- und Zulassungsregister\r\n          ",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Angaben zur antragstellenden Person",
+      "fieldGroups": [
+        {
+          "id": "top-level-group-angaben-zur-antragstellenden-person",
+          "title": "",
+          "rows": [
+            {
+              "fields": [
+                {
+                  "id": "familienname",
+                  "label": "Familienname",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "vorname",
+                  "label": "Vorname",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "geburtsdatum",
+                  "label": "Geburtsdatum",
+                  "width": 8,
+                  "type": "DATE"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "e-mail",
+                  "label": "E-Mail",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "telefon",
+                  "label": "Telefonnummer",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "handynummer",
+                  "label": "Handynummer",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "land",
+                  "label": "Land",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "strassenangaben",
+          "title": "Straßenangaben",
+          "rows": [
+            {
+              "fields": [
+                {
+                  "id": "strasse",
+                  "label": "Straße",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "hausnummer",
+                  "label": "Hausnummer",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "hausnummerzusatz",
+                  "label": "Hausnummerzusatz",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ort-inland-ohne-ortsteil",
+          "title": "Angaben zum Ort",
+          "rows": [
+            {
+              "fields": [
+                {
+                  "id": "postleitzahl",
+                  "label": "Postleitzahl",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "ort",
+                  "label": "Ort",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Angaben zur Antragsstellung",
+      "fieldGroups": [
+        {
+          "id": "top-level-group-angaben-parkausweis-bewohner",
+          "title": "",
+          "rows": [
+            {
+              "fields": [
+                {
+                  "id": "parkausweis-gueltigkeitsdauer",
+                  "label": "Gültigkeitsdauer",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "art-des-antrags-bewohnerparkausweis",
+                  "label": "Art des Antrags",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "startdatum",
+                  "label": "Startdatum",
+                  "width": 8,
+                  "type": "DATE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "angaben-zur-bestehendem-bewohnerparkausweis",
+          "title": "Angaben zur bestehenden Parkgenehmigung",
+          "rows": [
+            {
+              "fields": [
+                {
+                  "id": "parkausweisnummer",
+                  "label": "Parkausweisnummer",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "ausstelldatum-bewohnerparkausweis",
+                  "label": "Ausstelldatum",
+                  "width": 8,
+                  "type": "DATE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Angaben zum Fahrzeug",
+      "fieldGroups": [
+        {
+          "id": "top-level-group-angaben-zum-fahrzeug-parkausweis",
+          "title": "",
+          "rows": [
+            {
+              "fields": [
+                {
+                  "id": "angabe-des-kfz-kennzeichens",
+                  "label": "Angabe des KFZ-Kennzeichens",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "identifikation-des-fahrzeugs-kurz",
+                  "label": "Fahrzeug-Identifizierungsnummer",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "angaben-zur-halterin--zum-halter",
+                  "label": "Angaben zur Halterin, zum Halter des Fahrzeugs",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Angaben zur Fahrzeughalterin, zum Fahrzeughalter",
+      "fieldGroups": [
+        {
+          "id": "top-level-group-angaben-zur-fahrzeughalterin-zum-fahrzeughalter",
+          "title": "",
+          "rows": [
+            {
+              "fields": [
+                {
+                  "id": "familienname",
+                  "label": "Familienname",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "vorname",
+                  "label": "Vorname",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "strasse",
+                  "label": "Straße",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "hausnummer",
+                  "label": "Hausnummer",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "hausnummerzusatz",
+                  "label": "Hausnummerzusatz",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "land",
+                  "label": "Land",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "e-mail",
+                  "label": "E-Mail-Adresse",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "nutzungsueberlassung",
+                  "label": "Nutzungsüberlassung",
+                  "width": 8,
+                  "type": "FILE"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "zulassungsbescheinigung-teil-i-fahrzeugschein",
+                  "label": "Zulassungsbescheinigung Teil I (Fahrzeugschein)",
+                  "width": 8,
+                  "type": "FILE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ort-inland-ohne-ortsteil",
+          "title": "Angaben zum Ort",
+          "rows": [
+            {
+              "fields": [
+                {
+                  "id": "postleitzahl",
+                  "label": "Postleitzahl",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            },
+            {
+              "fields": [
+                {
+                  "id": "ort",
+                  "label": "Ort",
+                  "width": 8,
+                  "type": "STRING"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

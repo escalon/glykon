@@ -1,0 +1,66 @@
+(
+    $normalizeId := function($str) <s:s> {
+        $str.$lowercase()
+            .$replace(/ä/, 'ae')
+            .$replace(/ö/, 'oe')
+            .$replace(/ü/, 'ue')
+            .$replace(/ß/, 'ss')
+            .$replace(/\s+/, '-')
+            .$replace(/[^-a-zA-Z0-9]+/, '')
+    };
+    $mapType := function($code) <s:s> {
+        $code = "text" ? "STRING" 
+            : $code='date' ? "DATE"
+            : $code='file' ? "FILE"
+            : $code='num' ? "STRING" /* TODO: add number validation rule to field */
+            : "####" & $code
+    };
+    $mapFields := function($datenfelder) <a<o>:a<o>> {
+        $datenfelder.{
+            "fields": [
+                {
+                    "id": $normalizeId(name),
+                    "label": bezeichnungEingabe,
+                    "width": 8,
+                    "type": $mapType(datentyp.code)
+                }
+            ]                                
+        }
+    };
+    { 
+    "id": "m40191:MyForm:v1.0.0",
+    "sections": $append(
+        /* top-level fields go into general section and fieldgroup if not '1:*'' */
+        {
+            "title": "Allgemeine Angaben", /* TODO make title configurable */
+            "fieldGroups": [
+                {
+                    "id": "top-level-group",
+                    "title": "",
+                    "rows": $mapFields(stammdatenschema.struktur.enthaelt.datenfeld)
+                }
+            ]
+        },
+        /* subsequent sections: top-level field groups */
+        stammdatenschema.struktur.enthaelt.datenfeldgruppe.{
+            /* no such thing as a section id: "id": "section-" & $normalizeId(name),*/
+            "title": bezeichnungEingabe,
+            "fieldGroups": [
+                $append(
+                    {
+                        "id": "top-level-group-" & $normalizeId(name),
+                        "title": "",
+                        "rows": $mapFields(struktur.enthaelt.datenfeld)
+                    },            
+                    /* create fieldGroups recursively */
+                    struktur.enthaelt.**[TYPE_NAME='xdf.Datenfeldgruppe'].{
+                        "id": $normalizeId(name),
+                        "title": bezeichnungEingabe,
+                        "rows": $mapFields($.struktur.enthaelt.datenfeld)
+                    }
+                )
+            ]                 
+        }
+    )
+})
+

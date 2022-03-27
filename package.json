@@ -8,7 +8,8 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "jsonata": "^1.8.6",
     "jsonix": "^3.0.0"
   }
 }
