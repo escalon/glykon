@@ -1,0 +1,64 @@
+{
+  "TYPE_NAME": "xdf.Struktur",
+  "anzahl": "1:1",
+  "bezug": "",
+  "enthaelt": {
+    "TYPE_NAME": "xdf.Enthaelt",
+    "datenfeld": {
+      "TYPE_NAME": "xdf.Datenfeld",
+      "identifikation": {
+        "TYPE_NAME": "xdf.ElementIdentifikation",
+        "id": "TODO ID",
+        "version": "1.0"
+      },
+      "name": "",
+      "bezeichnungEingabe": "Neues Datenfeld",
+      "bezeichnungAusgabe": "",
+      "beschreibung": "",
+      "definition": "",
+      "bezug": "",
+      "status": {
+        "TYPE_NAME": "xdf.CodeStatus",
+        "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+        "listVersionID": "1.0",
+        "code": "aktiv"
+      },
+      "fachlicherErsteller": "TODO aktueller User",
+      "schemaelementart": {
+        "TYPE_NAME": "xdf.CodeSchemaelementart",
+        "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+        "listVersionID": "1.0",
+        "code": "RNG"
+      },
+      "hilfetextEingabe": "",
+      "hilfetextAusgabe": "",
+      "feldart": {
+        "TYPE_NAME": "xdf.CodeFeldart",
+        "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.feldart",
+        "listVersionID": "1.0",
+        "code": "input"
+      },
+      "datentyp": {
+        "TYPE_NAME": "xdf.CodeDatentyp",
+        "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.datentyp",
+        "listVersionID": "1.0",
+        "code": "text"
+      },
+      "praezisierung": "",
+      "inhalt": "",
+      "codelisteReferenz": {
+        "TYPE_NAME": "xdf.CodelisteReferenz",
+        "identifikation": {
+          "TYPE_NAME": "xdf.ElementIdentifikation",
+          "id": "TODO C05000073"
+        },
+        "genericodeIdentification": {
+          "TYPE_NAME": "xdf.GenericodeIdentification",
+          "canonicalIdentification": "urn:de:fim:codeliste:zustimmung",
+          "version": "2021-01-11",
+          "canonicalVersionUri": "urn:de:fim:codeliste:zustimmung_2021-01-11"
+        }
+      }
+    }
+  }
+}

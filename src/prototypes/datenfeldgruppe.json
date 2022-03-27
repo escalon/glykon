@@ -1,0 +1,38 @@
+{
+  "TYPE_NAME": "xdf.Struktur",
+  "anzahl": "1:1",
+  "bezug": "",
+  "enthaelt": {
+    "TYPE_NAME": "xdf.Enthaelt",
+    "datenfeldgruppe": {
+      "TYPE_NAME": "xdf.Datenfeldgruppe",
+      "identifikation": {
+        "TYPE_NAME": "xdf.ElementIdentifikation",
+        "id": "TODO G05000554",
+        "version": "1.0"
+      },
+      "name": "",
+      "bezeichnungEingabe": "Neue Datenfeldgruppe",
+      "bezeichnungAusgabe": "",
+      "beschreibung": "",
+      "definition": "",
+      "bezug": "",
+      "status": {
+        "TYPE_NAME": "xdf.CodeStatus",
+        "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.status",
+        "listVersionID": "1.0",
+        "code": "aktiv"
+      },
+      "fachlicherErsteller": "TODO",
+      "schemaelementart": {
+        "TYPE_NAME": "xdf.CodeSchemaelementart",
+        "listURI": "urn:xoev-de:fim:codeliste:xdatenfelder.schemaelementart",
+        "listVersionID": "1.0",
+        "code": "RNG"
+      },
+      "hilfetextEingabe": "",
+      "hilfetextAusgabe": "",
+      "struktur": []
+    }
+  }
+}
