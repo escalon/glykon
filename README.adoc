@@ -1,4 +1,4 @@
-= Glykon OZG Modeler
+= Glykon Sculptor for OZG
 :toc:
 
 Modeler for OZG reference data fields and mask Information.
