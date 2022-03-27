@@ -2,7 +2,7 @@
 <!--suppress XmlDefaultAttributeValue -->
 <xdf:xdatenfelder.stammdatenschema.0102 xmlns:xdf="urn:xoev-de:fim:standard:xdatenfelder_2"
                                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                        xsi:schemaLocation="urn:xoev-de:fim:standard:xdatenfelder_2 ../xsd/xdatenfelder.xsd">
+                                        xsi:schemaLocation="urn:xoev-de:fim:standard:xdatenfelder_2 ../../../xdatenfelder/2.0/xdatenfelder.xsd">
   <xdf:header>
     <xdf:nachrichtID>79118DBD6E4BC61A</xdf:nachrichtID>
     <xdf:erstellungszeitpunkt>2022-03-20T13:31:49.174163Z</xdf:erstellungszeitpunkt>

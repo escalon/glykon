@@ -7,7 +7,7 @@ var context = new Jsonix.Context([xdf]);
 var unmarshaller = context.createUnmarshaller();
 
 // xdatenfelder to JSON
-unmarshaller.unmarshalFile('bewohnerparken/S05000058V1.0_xdf2.xml',
+unmarshaller.unmarshalFile('examples/2.0/bewohnerparken/S05000058V1.0_xdf2.xml',
     function (unmarshalled) {
         try {
             const jsonataTemplate = fs.readFileSync('jsonata/example-formtemplate.jsonata', 'utf8')

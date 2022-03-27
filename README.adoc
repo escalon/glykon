@@ -12,7 +12,7 @@ XDatenfelder mapping to JSON is provided by Jsonix.
 
 == Roadmap
 
-User interface for editing
+User interface for editing, see https://github.com/escalon/glykon/issues[Issues].
 
 == Usage
 

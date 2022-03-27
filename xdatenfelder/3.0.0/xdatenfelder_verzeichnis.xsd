@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdf="urn:xoev-de:fim:standard:xdatenfelder_3.0.0" targetNamespace="urn:xoev-de:fim:standard:xdatenfelder_3.0.0" version="3.0.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:annotation>
+    <xs:appinfo>
+      <standard>
+        <nameLang>XDatenfelder</nameLang>
+        <nameKurz>XDatenfelder</nameKurz>
+        <nameTechnisch>xdatenfelder</nameTechnisch>
+        <kennung>urn:xoev-de:fim:standard:xdatenfelder</kennung>
+        <beschreibung>XDatenfelder</beschreibung>
+      </standard>
+      <versionStandard>
+        <version>3.0.0</version>
+        <versionXOEVHandbuch>2.1.0</versionXOEVHandbuch>
+        <versionXGenerator>2.6.1</versionXGenerator>
+        <versionModellierungswerkzeug>2021</versionModellierungswerkzeug>
+        <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+      </versionStandard>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:include schemaLocation="xdatenfelder-baukasten.xsd" />
+  <xs:element name="verzeichnis.datenfeldbaukasten.0201">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Datenfeldbaukasten übertragen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="element" minOccurs="0" maxOccurs="unbounded" type="xdf:ElementIdentifikation">
+              <xs:annotation>
+                <xs:documentation>Liste der IDs aller veröffentlichten Felder, Gruppen und Codelisten.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="verzeichnis.datenfeldkatalog.0202">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Datenfeldkatalog übertragen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="element" minOccurs="0" maxOccurs="unbounded" type="xdf:ElementIdentifikation">
+              <xs:annotation>
+                <xs:documentation>Liste der IDs aller veröffentlichten Dokumentsteckbriefe.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="verzeichnis.stammdatenschemabibliothek.0203">
+    <xs:annotation>
+      <xs:appinfo>
+        <rechtsgrundlage>FIM Baustein Datenfelder</rechtsgrundlage>
+      </xs:appinfo>
+      <xs:documentation>Stammdatenschemabibliothek übertragen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xdf:Nachricht">
+          <xs:sequence>
+            <xs:element name="element" minOccurs="0" maxOccurs="unbounded" type="xdf:ElementIdentifikation">
+              <xs:annotation>
+                <xs:documentation>Liste der IDs aller veröffentlichten Stammdatenschemata.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

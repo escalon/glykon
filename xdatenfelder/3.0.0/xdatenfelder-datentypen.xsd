@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdf="urn:xoev-de:fim:standard:xdatenfelder_3.0.0" targetNamespace="urn:xoev-de:fim:standard:xdatenfelder_3.0.0" version="3.0.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:annotation>
+    <xs:appinfo>
+      <standard>
+        <nameLang>XDatenfelder</nameLang>
+        <nameKurz>XDatenfelder</nameKurz>
+        <nameTechnisch>xdatenfelder</nameTechnisch>
+        <kennung>urn:xoev-de:fim:standard:xdatenfelder</kennung>
+        <beschreibung>XDatenfelder</beschreibung>
+      </standard>
+      <versionStandard>
+        <version>3.0.0</version>
+        <versionXOEVHandbuch>2.1.0</versionXOEVHandbuch>
+        <versionXGenerator>2.6.1</versionXGenerator>
+        <versionModellierungswerkzeug>2021</versionModellierungswerkzeug>
+        <nameModellierungswerkzeug>MagicDraw</nameModellierungswerkzeug>
+      </versionStandard>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:simpleType name="AnzahlString">
+    <xs:annotation>
+      <xs:documentation>Beschreibt einen String, der die Multiplizität (minimale und maximale Anzahl) der Elemente beschreibt. Beispiele: "0:1", "0:7" oder "1:*".</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d+:(\*|\d+)" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CountryCode">
+    <xs:annotation>
+      <xs:documentation>Ländercode, bestehend aus zwei Großbuchstaben gemäß ISO 3166-1 alpha-2. Beispiel: "DE" für Deutschland.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:length value="2" />
+      <xs:pattern value="[A-Z]{2}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Language">
+    <xs:annotation>
+      <xs:documentation>Die Primary Language darf nur aus zwei oder drei Kleinbuchstaben bestehen (gemäß ISO 639-1 (2002), ISO 639-2 (1998), ISO 639-3 (2007) oder ISO 639-5 (2008)).</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:maxLength value="3" />
+      <xs:minLength value="2" />
+      <xs:pattern value="[a-z]{2,3}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LanguageVariant">
+    <xs:annotation>
+      <xs:documentation>Sprachvariante (gemäß IANA Registry), derzeit wird nur "simple" für einfache Sprache unterstützt.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:pattern value="simple" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PatternString">
+    <xs:annotation>
+      <xs:documentation>Ein Meida Type gemäß der IANA Registry (https://www.iana.org/assignments/media-types/media-types.xhtml).</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:pattern value="\w+/[-+.\w]+" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="VersionString">
+    <xs:annotation>
+      <xs:documentation>Ein String, der eine Versionsnummer darstellt. Seit Version 3.0 ist dieser dreiteilig. Beispiel: "1.0.0" oder "2.7.3".</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d+\.\d+\.\d+" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+
