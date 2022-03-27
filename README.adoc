@@ -1,28 +1,23 @@
 = Glykon Sculptor for OZG
 :toc:
 
-Modeler for OZG reference data fields and mask Information.
+Modeler for OZG reference data fields and mask Information with pluggable form generation.
 
 == Features
 
-* Reads XDatenfelder definition files as JSON
-* Uses pluggable JSONata template to generate form specification files for OZG online process platforms.
-
-XDatenfelder mapping to JSON is provided by Jsonix.
+* Allows to edit XDatenfelder to derive an OZG Referenzdatenschema from FIM Stammdatenschema.
+* Generates JSON Form descriptors by applying a given JSONata template to OZG Referenzdatenschema
 
 == Roadmap
 
-User interface for editing, see https://github.com/escalon/glykon/issues[Issues].
+* User interface to edit mask information, see https://github.com/escalon/glykon/issues[Issues].
+* Support for version upgrade.
+* Electron app and Webcomponent building upon the current Svelte Component
 
 == Usage
-
-For now, this demo just reads the example XDatenfelder definition in  _bewohnerparken/S05000058V1.0_xdf2.xml_ and uses _jsonata/example-formtemplate.jsonata_ to log a sample form definition json in the console.
-
-Execute index.js in node.js V14.16.1 or later:
-
-* Install Node
+* Install Node v14.16.1 or later
 * Run `npm install` inside this repository
-* Run `node path/to/index.js`
+* Run `npm run dev`
 
 == Why Glykon?
 

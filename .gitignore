@@ -1,6 +1,9 @@
 # Dependency directories
 node_modules/
 
+/public/build/
+.DS_Store
+
 # Optional npm cache directory
 .npm
 
