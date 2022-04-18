@@ -6,6 +6,7 @@
 
     export let currentItem = {};
     export let currentItemJson = {};
+    export let currentMaskInformation;
 
     let bezeichnungEingabeInput; // TODO to focus when the item is new
 
