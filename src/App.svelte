@@ -18,8 +18,14 @@
     let formHandle;
     let stammdatenschemaValue;
 
-    // let stammdatenschemaElement = example;
-    let stammdatenschemaElement;
+    let stammdatenschemaElement = example;
+    // let stammdatenschemaElement;
+
+    let maskInformation = {
+        profile: {
+            seitenbau: {}
+        }
+    };
 
     $: if (stammdatenschemaElement) {
         stammdatenschemaValue = stammdatenschemaElement.value;
@@ -113,7 +119,7 @@
 
     {#if stammdatenschemaValue}
         <h1>{stammdatenschemaValue.stammdatenschema.name}</h1>
-        <Stammdatenschema structures="{stammdatenschemaValue.stammdatenschema.struktur}"/>
+        <Stammdatenschema structures="{stammdatenschemaValue.stammdatenschema.struktur}" {maskInformation}/>
     {/if}
 </div>
 <style>

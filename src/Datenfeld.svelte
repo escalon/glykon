@@ -1,10 +1,13 @@
 <script>
     import {createEventDispatcher} from 'svelte';
+    import Field from "./profiles/seitenbau/Field.svelte";
 
     const dispatch = createEventDispatcher();
 
     export let currentItem;
     export let currentItemJson;
+    export let currentMaskInformation;
+    export let anzahl;
 
     let bezeichnungEingabeInput; // TODO to focus when the item is new
 
@@ -103,6 +106,7 @@
             <input class="w3-input" bind:value="{currentItem.schemaelementart.code}"/>
         </label>
     </div>
+    <Field {currentMaskInformation} feldart="{currentItem.feldart.code}" datentyp="{currentItem.datentyp.code}" anzahl="{anzahl}" on:maskInformationChanged/>
     <p>
         <label>Quelltext
             <textarea class="w3-input" rows="30" cols="80" disabled>{currentItemJson}</textarea>
