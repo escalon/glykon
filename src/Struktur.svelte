@@ -133,7 +133,7 @@
         if (window.confirm(`Möchten Sie das Element '${bezeichnungEingabe}' wirklich löschen?`)) {
             parentStructures.splice(index, 1)
             dispatch('structuresChanged')
-            dispatch('currentItemSelected', {enthaelt: {}});
+            dispatch('currentItemSelected', {current:{enthaelt: {}}});
         }
     }
 
@@ -179,7 +179,7 @@
         };
         parentStructures.splice(index + 1, 0, newGroup)
         dispatch('structuresChanged')
-        dispatch('currentItemSelected', newGroup);
+        dispatch('currentItemSelected', {current:newGroup, fimIdPath: fimIdPath});
     }
 
     function addField(index) {
@@ -250,7 +250,7 @@
         };
         console.log(`new field: ${JSON.stringify(newField)}`)
         parentStructures.splice(index + 1, 0, newField)
-        dispatch('currentItemSelected', newField);
+        dispatch('currentItemSelected', {current:newField, fimIdPath: fimIdPath});
         dispatch('structuresChanged')
     }
 
@@ -296,7 +296,7 @@
         };
         parentStructures[index].enthaelt.datenfeldgruppe.struktur.splice(0, 0, newGroup)
         dispatch('structuresChanged')
-        dispatch('currentItemSelected', newGroup);
+        dispatch('currentItemSelected', {current:newGroup, fimIdPath: fimIdPath});
         open = true;
     }
 
@@ -368,7 +368,7 @@
         };
         parentStructures[index].enthaelt.datenfeldgruppe.struktur.splice(0, 0, newField)
         dispatch('structuresChanged')
-        dispatch('currentItemSelected', newField);
+        dispatch('currentItemSelected', {current:newField, fimIdPath: fimIdPath});
         open = true;
     }
 

@@ -4,8 +4,6 @@
 
     // TODO: import Jsonix as module
     // TODO: reset currentItem after loading a new file
-    // TODO: edit struktur, not enthaelt.datenfeld or enthaelt.datenfeldgruppe and make anzahl available
-    // TODO: use stammdatenschema as root of tree to allow adding elements before first enthaelt
     // TODO: optionally use own counter in number range 00
 
     import example from "./bewohnerparken-datenfelder.json"
@@ -118,8 +116,8 @@
     <button on:click={loadTemplate} disabled='{!stammdatenschemaElement}'>Formulartemplate wählen...</button>
 
     {#if stammdatenschemaValue}
-        <h1>{stammdatenschemaValue.stammdatenschema.name}</h1>
-        <Stammdatenschema structures="{stammdatenschemaValue.stammdatenschema.struktur}" {maskInformation}/>
+<!--        <h1>{stammdatenschemaValue.stammdatenschema.name}</h1>-->
+        <Stammdatenschema stammdatenschema="{stammdatenschemaValue.stammdatenschema}" {maskInformation}/>
     {/if}
 </div>
 <style>
